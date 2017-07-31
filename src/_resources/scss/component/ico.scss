@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 아이콘들 : 아이콘 공통(prefix : ico-) */
+[class^=ico-]{display:inline-block;box-sizing:border-box;font-size:1px;line-height:1px;font-style:normal;text-align:center;}
+
+/*! 아이콘들 : 아이콘(prefix : ico-) */
+.ico-txtCheckRed{width:12px;height:12px;background:url('../images/common/ico/icoTxtCheckRed.png') no-repeat;}
+.ico-txtCheckGreen{width:12px;height:12px;background:url('../images/common/ico/icoTxtCheckGreen.png') no-repeat;}
+.ico-txtNewRed{width:12px;height:12px;background:url('../images/common/ico/icoTxtNewRed.png') no-repeat;}
+.ico-schedule{width:12px;height:12px;background:url('../images/common/ico/icoSchedule.png') no-repeat;}
+.ico-threeCircleRed{width:12px;height:12px;background:url('../images/common/ico/icoThreeCircleRed.png') no-repeat;}
+.ico-txtInfoRed{width:18px;height:18px;background:url('../images/common/ico/icoTxtInfoRed.png') no-repeat;}
+.ico-titRhombus{width:23px;height:24px;background:url('../images/common/ico/icoTitRhombus.png') no-repeat;}
+//
+
+/*! 아이콘들 : 라디오(prefix : ico-) */
+.ico-radio-circleCheckRed{width:22px;height:22px;background-image:url('../images/common/bg/bgAgreeRadio.png');background-repeat:no-repeat;background-position:-29px 0;
+  &.on{background-position:0 0;}
+}
+.ico-radio-lock{width:12px;height:12px;background-image:url('../images/common/bg/bgLockRadio.png');background-repeat:no-repeat;background-position:-16px 0;
+  &.on{background-position:0 0;}
+}
+.ico-radio-plus{width:12px;height:12px;background-image:url('../images/common/bg/bgPlusMinusRadio.png');background-repeat:no-repeat;background-position:0 0;}
+.ico-radio-minus{width:12px;height:12px;background-image:url('../images/common/bg/bgPlusMinusRadio.png');background-repeat:no-repeat;background-position:0 -22px;}
+.ico-radio-Q{width:33px;height:23px;background-image:url('../images/common/bg/bgQnaRadio.png');background-repeat:no-repeat;background-position:0 0;}
+.ico-radio-A{width:33px;height:23px;background-image:url('../images/common/bg/bgQnaRadio.png');background-repeat:no-repeat;background-position:0 -32px;}
+
+/*! 아이콘들 : 상태 */
+[class^=ico-condition]{font-size:11px;line-height:11px;padding:2px 5px;color:#fff;width:48px;height:17px;background-image:url('../images/common/ico/icoCondition.png');background-repeat:no-repeat;}
+.ico-conditionRed{background-color:$COLOR-RED;}
+.ico-conditionGreen{background-color:$COLOR-GREEN;}
+.ico-conditionBlack{background-color:$COLOR-DARKGRAY;}
+// icoCondition

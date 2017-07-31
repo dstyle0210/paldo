@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+/*! 입력요소 공통적용(prefix : form-) */
+span[class^=form-] input,span[class^=form-] select,span[class^=form-] textarea{box-sizing:border-box;font-size:12px}
+span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^=form-] textarea:disabled{background:#f2f2f2}
+
+
+/*! 입력요소 > 셀렉트 (prefix : form-) */
+.form-select{display:inline-block;height:22px;font-size:1px}
+.form-select label{display:none}
+.form-select select{padding:0 10px;height:22px;border:1px solid #ececec;font-size:12px}
+
+
+/*! 입력요소 > 텍스트인풋 (prefix : form-) */
+.form-text{display:inline-block;height:22px;font-size:1px}
+.form-text>label{display:none}
+.form-text input[type=text]{padding:0 10px;height:22px;border:1px solid #ececec}
+
+
+/*! 입력요소 > 패스워드인풋 (prefix : form-) */
+.form-password{display:inline-block;height:22px}
+.form-password>label{display:none}
+.form-password input[type=password]{padding:0 10px;height:22px;border:1px solid #ececec}
+
+
+/*! 입력요소 > 라디오버튼 (prefix : form-) */
+.form-radio{display:inline-block;height:22px}
+.form-radio>label{display:none}
+.form-radio input[type=radio]+label{display:inline-block;height:22px;font-size:12px}
+
+
+/*! 입력요소 > 체크박스 (prefix : form-) */
+.form-checkbox{display:inline-block;height:22px}
+.form-checkbox>label{display:none}
+.form-checkbox input[type=checkbox]+label{display:inline-block;height:22px;font-size:12px}
+.form-checkbox input[type=checkbox]:disabled+label{color:#999}
+
+
+/*! 입력요소 > 텍스트에어리어 */
+.form-textarea{display:inline-block}
+.form-textarea>label{display:none}
+.form-textarea textarea{padding:10px;border:1px solid #ececec}
+
+
+/*! 입력요소 > 라벨 */
+.form-label{display:inline-block;height:22px;font-size:12px;line-height:22px}
+
+
+/*! 입력요소 > a버튼요소 (prefix : form-) */
+.form-btn{display:inline-block;height:22px}
+.form-btn>*{vertical-align:top}
+
+
+/*! 입력요소 > 입력요소 가운데 텍스트(prefix : form-) */
+.form-txt,.form-txt-tahoma{display:inline-block;height:22px;font-size:11px;line-height:22px}
+.form-txt-tahoma{font-family:tahoma}
+
+
+/*! 입력요소 > 입력요소 설명용 텍스트(우측)(prefix : form-) */
+.form-inline-desc{display:inline-block;padding-left:10px;height:22px;font-size:11px;color:#666;line-height:22px}
+
+
+/*! 입력요소 조합시 재조정 */
+.form-checkbox+.form-checkbox,.form-checkbox+.form-radio,.form-label+[class^=form-],.form-radio+.form-checkbox,.form-radio+.form-radio{margin-left:5px}
+[class^=form-]+.form-label{margin-left:15px}
+.form-textarea+.form-dl{border-bottom:0}
+
+
+/*! 입력요소 DL구조 */
+.form-dl{width:100%;overflow:hidden;border-bottom:1px solid #ececec}
+.form-dl dd,.form-dl dt{padding-top:10px;padding-bottom:10px}
+.form-dl dt{float:left;font-weight:700;font-size:13px;color:#252525}
+.form-dl dd{float:left}
+.form-dl dd>*{vertical-align:middle}
+.form-dl dd .form-label{font-size:11px}
+.form-dl dd .form-txt-tahoma{color:#999}

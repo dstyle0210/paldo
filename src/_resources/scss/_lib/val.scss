@@ -1,0 +1,77 @@
+
+// 컬러 공통 변수
+$COLOR-BRAND:#e03627; // 브랜드 컬러
+$COLOR-WHITE:#fff; // 흰색
+$COLOR-LIGHTGRAY:#ececec; // 연한 회색
+$COLOR-GRAY:#666; // 기본폰트컬러, 기본컬러
+$COLOR-DARKGRAY:#252525; // 진한폰트컬러
+$COLOR-RED:$COLOR-BRAND; // #ff412e; // 빨간색
+$COLOR-GREEN:#6eb92c; // 녹색
+$COLOR-FOOTER:$COLOR-DARKGRAY; // 풋터배경컬러
+
+
+// 사이즈 공통변수
+$WRAP-WIDTH:940px;
+$FOOTER-HEIGHT:100px;
+
+// 폰트 공통변수
+$FONT-COLOR:$COLOR-GRAY; //#666
+$FONT-GRAY:$COLOR-GRAY; //#666
+$FONT-DARKGRAY:$COLOR-DARKGRAY; // #333;
+$FONT-WHITE:$COLOR-WHITE; //#fff
+$FONT-LINK:$COLOR-DARKGRAY; //#333
+
+// 배경공통변수
+$BG-BRAND:$COLOR-BRAND;
+$BG-WHITE:$COLOR-WHITE;
+
+
+// 버튼 공통변수(사이즈)
+$BTN-XS-MINWIDTH:60px;
+$BTN-XS-HEIGHT:22px;
+$BTN-XS-FONT:11px;
+$BTN-SM-MINWIDTH:84px;
+$BTN-SM-HEIGHT:33px;
+$BTN-SM-FONT:12px;
+$BTN-NM-MINWIDTH:150px;
+$BTN-NM-HEIGHT:50px;
+$BTN-NM-FONT:16px;
+$BTN-LG-MINWIDTH:$BTN-NM-MINWIDTH;
+$BTN-LG-HEIGHT:$BTN-NM-HEIGHT;
+$BTN-LG-FONT:$BTN-NM-FONT;
+// 버튼 공통변수(컬러)
+/*
+// 기능별 구분
+a.btn-brand{color:$BTN-TXT-WHITE;background-color:$BTN-BG-BRAND;border:$BTN-BR-BRAND;}
+a.btn-submit{color:$BTN-TXT-WHITE;background-color:$BTN-BG-BRAND;border:$BTN-BR-BRAND;}
+a.btn-cancel{color:$BTN-TXT-WHITE;background-color:$BTN-BG-BLACK;border:$BTN-BR-BLACK;}
+a.btn-edit{color:$BTN-TXT-WHITE;background-color:$BTN-BG-GREEN;border:$BTN-BR-GREEN;}
+a.btn-upload{color:$BTN-TXT-WHITE;background-color:$BTN-BG-RED;border:$BTN-BR-RED;}
+a.btn-address{color:$BTN-TXT-WHITE;background-color:$BTN-BG-RED;border:$BTN-BR-RED;}
+*/
+$BTN-TXT-DEFAULT:$COLOR-WHITE; // 기본형태
+$BTN-TXT-BRAND:$COLOR-WHITE; // 브랜드컬러
+$BTN-TXT-SUBMIT:$COLOR-WHITE; // 확인 , 승인 등 (긍정적)
+$BTN-TXT-CANCEL:$COLOR-WHITE; // 취소, 거부 등 (부정적)
+$BTN-TXT-EDIT:$COLOR-WHITE; // 수정 , 다음단계등 (중립적)
+$BTN-TXT-UPLOAD:$COLOR-WHITE; // 파일 업로드
+$BTN-TXT-ADDRESS:$COLOR-DARKGRAY; // 우편주소 찾기
+
+$BTN-BG-DEFAULT:$COLOR-BRAND;
+$BTN-BG-BRAND:$COLOR-BRAND;
+$BTN-BG-SUBMIT:$COLOR-BRAND; // 확인 , 승인 등 (긍정적)
+$BTN-BG-CANCEL:$COLOR-DARKGRAY; // 취소, 거부 등 (부정적)
+$BTN-BG-EDIT:$COLOR-GREEN; // 수정 , 다음단계등 (중립적)
+$BTN-BG-UPLOAD:$COLOR-RED; // 파일 업로드
+$BTN-BG-ADDRESS:$COLOR-WHITE; // 우편주소 찾기
+
+$BTN-BR-DEFAULT:1px solid $COLOR-BRAND;
+$BTN-BR-BRAND:1px solid $COLOR-BRAND;
+$BTN-BR-SUBMIT:1px solid $COLOR-BRAND; // 확인 , 승인 등 (긍정적)
+$BTN-BR-CANCEL:1px solid #010101; // 취소, 거부 등 (부정적)
+$BTN-BR-EDIT:1px solid $BTN-BG-EDIT; // 수정 , 다음단계등 (중립적)
+$BTN-BR-UPLOAD:1px solid $BTN-BG-UPLOAD; // 파일 업로드
+$BTN-BR-ADDRESS:1px solid #cfcfcf; // 우편주소 찾기
+
+@import "../_lib/form-val.scss"; // 폼요소 변수
+@import "../_lib/wall-val.scss"; // 영역 변수

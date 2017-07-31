@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 리스트 공통(prefix : board-) */
+[class^=board-list]{width:100%;border-top:3px solid #111}
+
+
+/*! 게시판 > 리스트 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */

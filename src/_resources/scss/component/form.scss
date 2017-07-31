@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 입력요소 공통적용(prefix : form-) */
+span[class^=form-]{
+  input,select,textarea{box-sizing:border-box;font-size:$FORM-FONT-SIZE;
+    &:disabled{background:#f2f2f2;}
+  }
+}
+
+/*! 입력요소 > 셀렉트 (prefix : form-) */
+.form-select{display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:1px;
+  label{display:none;}
+  select{font-size:$FORM-FONT-SIZE;padding:0 $FORM-PADDING-WIDTH;height:$FORM-INLINE-HEIGHT;border:$FORM-BORDER;}
+}
+/*! 입력요소 > 텍스트인풋 (prefix : form-) */
+.form-text{display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:1px;
+  >label{display:none;}
+  input[type=text]{padding:0 $FORM-PADDING-WIDTH;height:$FORM-INLINE-HEIGHT;border:1px solid $COLOR-LIGHTGRAY;}
+}
+/*! 입력요소 > 패스워드인풋 (prefix : form-) */
+.form-password{display:inline-block;height:$FORM-INLINE-HEIGHT;
+  >label{display:none;}
+  input[type=password]{padding:0 $FORM-PADDING-WIDTH;height:$FORM-INLINE-HEIGHT;border:1px solid $COLOR-LIGHTGRAY;}
+}
+/*! 입력요소 > 라디오버튼 (prefix : form-) */
+.form-radio{display:inline-block;height:$FORM-INLINE-HEIGHT;
+  >label{display:none;}
+  input[type=radio]+label{display:inline-block;font-size:$FORM-FONT-SIZE;height:$FORM-INLINE-HEIGHT;}
+}
+/*! 입력요소 > 체크박스 (prefix : form-) */
+.form-checkbox{display:inline-block;height:$FORM-INLINE-HEIGHT;
+  >label{display:none;}
+  input[type=checkbox]+label{display:inline-block;font-size:$FORM-FONT-SIZE;height:$FORM-INLINE-HEIGHT;}
+  input[type=checkbox]:disabled + label{color:#999;}
+}
+/*! 입력요소 > 텍스트에어리어 */
+.form-textarea{display:inline-block;
+  >label{display:none;}
+  textarea{padding:$FORM-PADDING-WIDTH;border:1px solid $COLOR-LIGHTGRAY;}
+}
+/*! 입력요소 > 라벨 */
+.form-label{display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:$FORM-FONT-SIZE;line-height:$FORM-INLINE-HEIGHT;}
+
+/*! 입력요소 > a버튼요소 (prefix : form-) */
+.form-btn{display:inline-block;height:$FORM-INLINE-HEIGHT;
+  >*{vertical-align:top;}
+}
+/*! 입력요소 > 입력요소 가운데 텍스트(prefix : form-) */
+.form-txt{display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:11px;line-height:$FORM-INLINE-HEIGHT;}
+.form-txt-tahoma{display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:11px;line-height:$FORM-INLINE-HEIGHT;font-family:tahoma;}
+
+/*! 입력요소 > 입력요소 설명용 텍스트(우측)(prefix : form-) */
+.form-inline-desc{padding-left:10px;color:$COLOR-GRAY;display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:11px;line-height:$FORM-INLINE-HEIGHT;}
+
+/*! 입력요소 조합시 재조정 */
+.form-radio + .form-radio,.form-radio + .form-checkbox,.form-checkbox + .form-radio,.form-checkbox + .form-checkbox{margin-left:5px;}
+.form-label + [class^=form-]{margin-left:5px;}
+[class^=form-] + .form-label{margin-left:15px;}
+.form-textarea + .form-dl{border-bottom:0;}
+
+/*! 입력요소 DL구조 */
+.form-dl{width:100%;overflow:hidden;border-bottom:$WALL-BORDER-BOTTOM;
+  dt,dd{padding-top:10px;padding-bottom:10px;}
+  dt{float:left;color:$COLOR-DARKGRAY;font-size:13px;font-weight:700;}
+  dd{float:left;
+    >*{vertical-align:middle;}
+    .form-label{font-size:11px;}
+    .form-txt-tahoma{color:#999;}
+  }
+}

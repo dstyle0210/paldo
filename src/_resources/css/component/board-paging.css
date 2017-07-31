@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 페이징(prefix : board-) */
+.board-paging *{vertical-align:top}
+.board-paging a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:1px solid #cecece;text-align:center;font-weight:700;font-size:12px}
+.board-paging a.n{padding-top:7px}
+.board-paging a.on{border:1px solid #e03627;color:#fff;background:#e03627}
+.board-paging a i{display:inline-block;height:9px;background-image:url(../images/common/bg/bgBoardPaging.gif);background-repeat:no-repeat}
+.board-paging a.first i,.board-paging a.last i{width:9px}
+.board-paging a.next i,.board-paging a.prev i{width:5px}
+.board-paging a.first i{background-position:0 0}
+.board-paging a.prev i{background-position:-25px 0}
+.board-paging a.next i{background-position:-50px 0}
+.board-paging a.last i{background-position:-75px 0}

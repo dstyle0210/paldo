@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+/*! 쓰기,보기 영역(prefix : wall-) */
+.wall-default{position:relative;box-sizing:border-box;padding:0 30px;width:100%;border-top:3px solid #111;border-bottom:1px solid #ececec}
+
+
+/*! 프로필 쓰기,보기 영역(prefix : wall-) */
+.wall-profile{position:relative;box-sizing:border-box;width:100%;border-top:3px solid #111;background:#222}
+.wall-profile .board-write{width:778px}
+.wall-profile .profile-write{position:absolute;top:0;right:0;width:162px}
+.wall-profile .profile-write h4{box-sizing:border-box;padding-top:8px;height:41px;text-align:center;font-size:16px;color:#fff;background:#111}
+.wall-profile .profile-write .photo{margin:0 auto;width:120px;height:160px;background:url(../images/common/bg/bgProfileNull.jpg) no-repeat}
+.wall-profile .profile-write .photo>img{width:120px;height:160px}
+.wall-profile .profile-write .photoDesc{padding-top:10px;text-align:center;font-size:12px;color:#fff;line-height:15px}
+.wall-profile .profile-write .btnSec{margin-top:20px}
+
+
+/*! wall 안에 cpnt가 포함될경우의 커스텀 */
+[class^=wall-] .board-write,[class^=wall-] .board-write-vertical{border-top:0}
+
+
+/*! wall 안에 cpnt가 옆에 있는경우 커스텀 */
+.wall-default+.board-write,.wall-default+.board-write-vertical{border-top:0}
+.wall-default+.form-dl dt{padding-left:20px}

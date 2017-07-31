@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 레이어 컴포넌트(prefix:cpnt-) */
+.cpnt-layer{
+  $titHei:40px; // 타이틀 높이
+  min-width:300px;
+  .title{position:relative;width:100%;overflow:hidden;background:$BG-BRAND;
+    h3{box-sizing:border-box;padding-left:25px;width:100%;height:$titHei;line-height:$titHei;font-size:16px;color:$FONT-WHITE;}
+    .close{position:absolute;top:0;right:0;width:40px;height:$titHei;background:#222 url('../images/common/ico/icoLayerClose.png') no-repeat;}
+  }
+  $border:1px solid #ccc;
+  .cont{box-sizing:border-box;padding:30px 25px;border-left:$border;border-right:$border;border-bottom:$border;width:100%;background:$BG-WHITE;}
+  .ulistSec{margin-top:20px; // 공지형리스트의 경우
+    li{font-size:11px;}
+  }
+  .btnSec{margin-top:30px;} // 버튼의 경우
+}

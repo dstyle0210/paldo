@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+/*! 버튼 모듈(prefix : btn-) */
+a[class^=btn-]{box-sizing:border-box}
+a[class^=btn-] *{vertical-align:top}
+a[class^=btn-],a[class^=btn-]>span{display:inline-block}
+a.btn-xs{padding:5.5px 10px;height:22px;font-size:11px;line-height:7.33333px}
+a.btn-sm{padding:10.5px 30px;height:33px;font-size:12px;line-height:8px}
+a.btn-lg,a.btn-nm{padding:17px 30px;height:50px;font-size:16px;line-height:10.66667px}
+a.btn-default{padding:5.5px 30px;height:22px;font-size:12px;line-height:8px}
+a.btn-brand,a.btn-default,a.btn-submit{border:1px solid #e03627;color:#fff;background-color:#e03627}
+a.btn-cancel{border:1px solid #010101;color:#fff;background-color:#252525}
+a.btn-edit{border:1px solid #6eb92c;color:#fff;background-color:#6eb92c}
+a.btn-upload{border:1px solid #e03627;color:#fff;background-color:#e03627}
+a.btn-address{border:1px solid #cfcfcf;border-radius:3px;color:#252525;background-color:#fff}
+a.btn-close-brand,a.btn-close-brand-xs{width:22px;height:22px;border:1px solid #e03523;background:#e03627 url(../images/common/ico/icoTransparentCloseX.png) no-repeat 50% 50%}
+a.btn-close-brand span,a.btn-close-brand-xs span{display:none}
+a.btn-close-brand-xs{width:15px;height:15px;background-size:9px 9px}
+a.btn-add,a.btn-calc{height:22px;border:1px solid #ececec;background:#fff}
+a.btn-calc{padding-top:4px;width:22px;text-align:center}
+a.btn-add{position:relative;padding:0 22px 0 7px;width:62px;overflow:hidden;text-align:left;font-weight:700;font-size:11px;color:#333;line-height:18px}
+a.btn-add span{width:100%;height:20px;border-right:1px solid #ececec}
+a.btn-add i{position:absolute;top:4px;right:4px}
+.btn-sec-center{text-align:center}
+.btn-sec-tight>a{margin:0}

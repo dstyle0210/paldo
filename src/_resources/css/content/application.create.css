@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+/*! 입사지원 공통 */
+.applicationWrap .createH2{padding-bottom:30px;border-bottom:1px solid #cecece;text-align:center;font-size:30px;color:#252525;line-height:30px}
+.applicationWrap .createH3{padding-bottom:20px;font-size:16px;color:#252525;line-height:1}
+.applicationWrap .createH3>*{vertical-align:middle}
+.applicationWrap .btn-lg{min-width:190px}
+.applicationWrap .createWriteSec{padding-top:50px;padding-bottom:10px}
+.applicationWrap .createWriteSec .createArticle{position:relative;margin-top:50px}
+.applicationWrap .createWriteSec .createArticle .byteText{position:absolute;top:20px;right:10px;font-size:11px;color:#999}
+.applicationWrap .createWriteSec .createArticle:first-child{margin-top:0}
+.applicationWrap .btnSec{margin-top:50px}
+.applicationWrap .addRow{padding-top:15px;text-align:right;font-size:13px;color:#666}
+.applicationWrap .addRow>*{vertical-align:top}
+.applicationWrap .createSuccessSec{padding:90px 0;text-align:center}
+.applicationWrap .createSuccessSec h3,.applicationWrap .createSuccessSec p{font-size:20px;line-height:30px}
+.applicationWrap .createSuccessSec h3{padding-bottom:10px}
+
+
+/*! 입사지원 > 지원서작성 > 프로세스 오브젝트 */
+.createProcess{margin-top:50px;width:100%}
+.createProcess>ol{margin:0 auto;width:923px;overflow:hidden}
+.createProcess>ol>li{float:left;padding:0 25px 0 50px;width:162px;background:url(../images/application/bgCreateProcessStep.gif) no-repeat 0 68.5px}
+.createProcess>ol>li:first-child{padding-left:25px;background:0 0}
+.createProcess .circle,.createProcess dl[class^=step]{width:162px;height:162px;background-image:url(../images/application/bgCreateProcessOff.gif);background-repeat:no-repeat}
+.createProcess dl[class^=step]{background-image:url(../images/application/bgCreateProcess.png)}
+.createProcess dl[class^=step]>dt{padding-top:30px;text-align:center;font-weight:700;font-size:14px}
+.createProcess dl[class^=step]>dd{padding-top:70px;text-align:center;font-weight:700;font-size:13px}
+.createProcess .step01{background-position:0}
+.createProcess .step02{background-position:-162px}
+.createProcess .step03{background-position:-324px}
+.createProcess .step04{background-position:-486px}
+.createProcess .stepOn{background-color:#e03627}
+
+
+/*! 입사지원 > 합격자 조회 > 합격결과 */
+.applicationWrap .passResultSec{box-sizing:border-box;margin-top:50px;padding:70px 50px;width:100%;border:1px solid #ececec}

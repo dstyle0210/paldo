@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 컨덴츠 > 페이지공통 */
+.pageWrap{padding-top:30px;padding-bottom:50px;margin:0 auto;width:$WRAP-WIDTH;}
+
+/*! 컨덴츠 > 레이어대기영역 */
+.layerSpace{display:none;}

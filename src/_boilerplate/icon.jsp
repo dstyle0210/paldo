@@ -1,0 +1,75 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>채용사이트</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/nanumgothic.css">
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/component.css" />
+
+    <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <style>
+        .boilerplate>div{margin-left:200px;margin-top:10px;}
+    </style>
+</head>
+<body>
+<div class="boilerplate">
+    <div>
+        <!-- 텍스트 옆 체크 아이콘 -->
+        <i class="ico-txtCheckRed"></i>
+        <i class="ico-txtCheckGreen"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-txtNewRed"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-schedule"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-txtInfoRed"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-threeCircleRed"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-titRhombus"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-conditionRed"><span>접수중</span></i>
+        <i class="ico-conditionGreen"><span>D-20</span></i>
+        <i class="ico-conditionBlack"><span>마감</span></i>
+    </div>
+
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-radio-circleCheckRed"></i>
+        <i class="ico-radio-circleCheckRed on"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-radio-lock"></i>
+        <i class="ico-radio-lock on"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-radio-plus"></i>
+        <i class="ico-radio-minus"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-radio-Q"></i>
+        <i class="ico-radio-A"></i>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+/*! 헤더 */
+.header{position:relative;width:100%;height:137px;overflow:hidden;border-bottom:1px solid #898989;background:#fff}
+.header a{text-decoration:none}
+
+
+/*! 헤더 > 로고,GNB */
+.header .logoGnb{margin:0 auto;width:940px;height:90px;overflow:hidden}
+.header .logoGnb .logo{display:table;float:left;height:90px}
+.header .logoGnb .logo a{display:table-cell;vertical-align:middle}
+.header .logoGnb .gnb{float:right}
+.header .logoGnb .gnb ul{padding-top:20px;overflow:hidden}
+.header .logoGnb .gnb li{float:left;padding:0 35px 0 50px;background:url(../images/common/bg/bgGnbSplit.gif) no-repeat 0 15px}
+.header .logoGnb .gnb li:first-child{background:0 0}
+.header .logoGnb .gnb li:last-child{padding-right:0}
+.header .logoGnb .gnb a{display:inline-block;position:relative;padding:10px 15px 10px 0;font-weight:700;font-size:18px;color:#252525}
+.header .logoGnb .gnb a.on,.header .logoGnb .gnb a:hover{color:#e03627}
+.header .logoGnb .gnb a.on i,.header .logoGnb .gnb a:hover i{display:inline-block;position:absolute;top:0;right:0;width:16px;height:19px;background:#e03627 url(../images/common/ico/icoGnbOnCanvas.png) no-repeat}
+
+
+/*! 헤더 > 현재위치 */
+.header .location{width:100%;height:47px;background-color:#e03627}
+.header .location .inner{position:relative;margin:0 auto;width:940px}
+.header .location .breadCrumb a{display:inline-block;padding-right:35px;height:47px;font-size:14px;color:#fff;line-height:47px;background:url(../images/common/bg/bgBreadCrumbArrow.png) no-repeat right 0}
+.header .location .breadCrumb a span{display:inline-block;padding-left:10px}
+.header .location .breadCrumb a:last-child{background:0 0}
+.header .location .breadCrumb a.home span{padding-left:30px;background:url(../images/common/ico/icoBreadCrumbHome.gif) no-repeat 0 48%}
+.header .location .snsShare{position:absolute;top:11.5px;right:0}
+.header .location .snsShare a.fb{display:inline-block;box-sizing:border-box;padding-left:29px;height:24px;font-size:12px;color:#fff;line-height:24px;background:url(../images/common/ico/icoLnbFacebook.png) no-repeat}
+
+
+/*! 헤더 > 드랍다운 메뉴 */
+.dropdown{position:absolute;top:90px;left:0;width:100%;height:0;overflow:hidden;border-top:1px solid #898989;transition:all 400ms;background:#fff}
+.dropdown.on{height:47px}
+.dropdown .inner{margin:0 auto;width:940px}
+.dropdown [class^=lnb]{display:none;box-sizing:border-box;padding:10px 0;width:100%;height:47px}
+.dropdown [class^=lnb] a{display:table-cell;text-align:center;font-weight:700;font-size:15px;color:#252525}
+.dropdown [class^=lnb] a>span{display:inline-block;box-sizing:border-box;width:100%;height:27px;border-left:1px solid #ccc;line-height:27px}
+.dropdown [class^=lnb] a:first-child>span{border-left:0}
+.dropdown [class^=lnb].lnbOn{display:table}

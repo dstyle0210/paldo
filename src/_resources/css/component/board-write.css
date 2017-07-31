@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 쓰기 공통(prefix : board-) */
+[class^=board-write]{width:100%;border-top:3px solid #111;background:#fff}
+[class^=board-write].border-null{border-top:0}
+
+
+/*! 게시판 > 쓰기 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
+.board-write table,.board-write-vertical table{width:100%}
+.board-write th{padding-left:20px;text-align:left;color:#252525}
+.board-write th .byte{font-weight:400;font-size:12px;color:#999}
+.board-write td,.board-write th{box-sizing:border-box;padding-top:10px;padding-bottom:10px;min-height:42px;border-bottom:1px solid #ececec;font-size:12px}
+.board-write td>*{vertical-align:top}
+.board-write td .row{padding-top:5px}
+.board-write td .row:first-child{padding-top:0}
+.board-write-vertical th{font-size:13px;color:#252525}
+.board-write-vertical th sub{display:block;bottom:0;padding-top:3px;font-weight:400;font-size:11px;line-height:1.2}
+.board-write-vertical td,.board-write-vertical th{box-sizing:border-box;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #ececec;border-left:1px solid #ececec;text-align:center}
+.board-write-vertical td:first-child,.board-write-vertical th:first-child{border-left:0}
+.board-write-vertical td.border-none,.board-write-vertical th.border-none,.board-write-vertical tr.border-none td{border-left:0}

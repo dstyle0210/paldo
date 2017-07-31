@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 게시판 > 쓰기 공통(prefix : board-) */
+[class^=board-write]{width:100%;border-top:$WALL-BORDER-TOP;background:$COLOR-WHITE;
+  &.border-null{border-top:0};
+}
+
+/*! 게시판 > 쓰기 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
+.board-write{
+  table{width:100%;}
+  th{text-align:left;color:$COLOR-DARKGRAY;font-size:13px;padding-left:20px;
+    .byte{font-size:12px;color:#999;font-weight:400;}
+  }
+  th,td{box-sizing:border-box;padding-top:10px;padding-bottom:10px;min-height:42px;font-size:12px;border-bottom:$WALL-BORDER-BOTTOM;}
+  td > *{vertical-align:top;}
+  td .row{padding-top:5px;}
+  td .row:first-child{padding-top:0;}
+}
+
+.board-write-vertical{
+  table{width:100%;}
+  th{color:$COLOR-DARKGRAY;font-size:13px;
+    sub{padding-top:3px;font-size:11px;display:block;bottom:0;line-height:1.2;font-weight:400;}
+  }
+  th,td{box-sizing:border-box;padding-top:10px;padding-bottom:10px;text-align:center;border-bottom:$WALL-BORDER-BOTTOM;border-left:$WALL-BORDER-BOTTOM;
+    &:first-child{border-left:0;}
+    &.border-none{border-left:0;}
+  }
+  tr.border-none td{border-left:0;}
+}

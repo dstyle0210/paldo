@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+.footer{width:100%;height:$FOOTER-HEIGHT;overflow:hidden;background:$COLOR-FOOTER;
+  .inner{margin:0 auto;padding-top:30px;width:$WRAP-WIDTH;}
+  .logo{float:left;width:106px;}
+  .copyright{float:left;padding-top:5px;color:$FONT-WHITE;font-size:11px;font-family:dotum;color:#aeaeae;}
+  .familysite{float:right;}
+}
+// 패밀리사이트
+.familysite-select{
+  $wid:130px;
+  $hei:20px;
+  $fontSize:11px;
+  $paddingLeft:7px;
+  $spriteImage:"../images/common/bg/bgFamilySiteArrow.gif";
+  box-sizing:border-box;display:inline-block;position:relative;width:$wid;height:$hei;background:#3d3d3d url($spriteImage) 95% center no-repeat;
+  label{box-sizing:border-box;position:absolute;top:0;left:0;padding-left:$paddingLeft;width:75%;height:$hei;min-height:$hei;line-height:$hei;font-size:$fontSize;color:#b6b6b6;text-transform: uppercase;}
+  select{width:100%;height:$hei;min-height:$hei;line-height:$hei;padding:0 10px;font-size:12px;opacity:0;filter:alpha(opacity=0);}
+}

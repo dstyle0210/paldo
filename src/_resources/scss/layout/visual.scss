@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 비주얼 영역 설정 */
+.visual{position:relative;width:100%;min-width:$WRAP-WIDTH;height:200px;overflow:hidden;
+  >img{position:absolute;top:0;left:50%;margin-left:-1000px;}
+}

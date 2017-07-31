@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 컨덴츠 영역 설정 */
+.content{width:100%;min-width:$WRAP-WIDTH;background:$BG-WHITE;}

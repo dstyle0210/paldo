@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+$logoGnbHei:90px; // 로고,GNB영역 높이
+$breadCrumbHei:47px; // 현재위치,드롭다운 높이
+/*! 헤더 */
+.header{position:relative;width:100%;height:($logoGnbHei+$breadCrumbHei);overflow:hidden;background:$BG-WHITE;border-bottom:1px solid #898989;
+  a{text-decoration:none;}
+}
+
+/*! 헤더 > 로고,GNB */
+.header .logoGnb{
+  $width:$WRAP-WIDTH; // 컨덴츠 가로값
+  margin:0 auto;width:$width;height:$logoGnbHei;overflow:hidden;
+  .logo{float:left;display:table;height:$logoGnbHei;
+    a{display:table-cell;vertical-align:middle;}
+  }
+  .gnb{float:right;
+    ul{padding-top:20px;overflow:hidden;}
+    li{float:left;padding:0 35px 0 50px;background:url('../images/common/bg/bgGnbSplit.gif') no-repeat 0 15px;
+      &:first-child{background:none;}
+      &:last-child{padding-right:0;}
+    }
+    $icoBg:$COLOR-BRAND; // 온상태의 우측상단 아이콘 색상
+    $txtOn:$COLOR-BRAND; // 온상태의 텍스트 색상
+    a{position:relative;display:inline-block;padding:10px 15px 10px 0;font-size:18px;font-weight:700;color:$FONT-DARKGRAY;
+      &.on,&:hover{color:$txtOn;
+        i{position:absolute;top:0;right:0;display:inline-block;width:16px;height:19px;background:$icoBg url('../images/common/ico/icoGnbOnCanvas.png') no-repeat;}
+      }
+    }
+  }
+}
+
+/*! 헤더 > 현재위치 */
+.header .location{
+  $width:$WRAP-WIDTH; // 컨덴츠 가로값
+  $bg:$COLOR-BRAND; // 현재위치 배경색.
+  width:100%;height:$breadCrumbHei;background-color:$bg;
+  .inner{position:relative;margin:0 auto;width:$width;}
+  // 현재위치
+  .breadCrumb{
+    a{display:inline-block;padding-right:35px;font-size:14px;color:$FONT-WHITE;height:$breadCrumbHei;line-height:$breadCrumbHei;background:url('../images/common/bg/bgBreadCrumbArrow.png') no-repeat right 0;
+      span{display:inline-block;padding-left:10px;}
+      &:last-child{background:none;}
+    }
+    a.home span{padding-left:30px;background:url('../images/common/ico/icoBreadCrumbHome.gif') no-repeat 0 48%;}
+  }
+  // 페이스북
+  $fbHei:24px; // 페이스북 아이콘 높이
+  .snsShare{position:absolute;top:($breadCrumbHei - $fbHei)/2;right:0;
+    a.fb{display:inline-block;box-sizing:border-box;padding-left:29px;height:$fbHei;line-height:$fbHei;background:url('../images/common/ico/icoLnbFacebook.png') no-repeat;font-size:12px;color:#fff;
+    }
+  }
+}
+
+/*! 헤더 > 드랍다운 메뉴 */
+.dropdown{position:absolute;top:$logoGnbHei;left:0;width:100%;background:$BG-WHITE;height:0;transition:all 400ms;overflow:hidden;border-top:1px solid #898989;
+  &.on{height:$breadCrumbHei;}
+
+  $width:$WRAP-WIDTH;
+  $lineGap:10px; // 서브메뉴의 위아래 간격.
+  .inner{margin:0 auto;width:$width;}
+  [class^=lnb]{display:none;box-sizing:border-box;padding:10px 0;width:100%;height:$breadCrumbHei;
+    a{display:table-cell;color:$FONT-DARKGRAY;text-align:center;font-size:15px;font-weight:700;
+      $spanHei:$breadCrumbHei - ($lineGap*2); // 서브메뉴의 높이
+      >span{display:inline-block;box-sizing:border-box;height:$spanHei;line-height:$spanHei;width:100%;border-left:1px solid #ccc;}
+      &:first-child > span{border-left:0;}
+    }
+    &.lnbOn{display:table;}
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

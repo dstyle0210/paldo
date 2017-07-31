@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 게시판 > 페이징(prefix : board-) */
+.board-paging{
+  $on:$BG-BRAND;
+  $border-on:1px solid $on;
+  $border-off:1px solid #cecece;
+  *{vertical-align:top;}
+  a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:$border-off;font-size:12px;text-align:center;font-weight:700;
+    &.n{padding-top:7px;}
+    &.on{background:$on;border:$border-on;color:$FONT-WHITE;}
+    i{display:inline-block;background-image:url('../images/common/bg/bgBoardPaging.gif');background-repeat:no-repeat;height:9px;}
+    &.first,&.last{
+      i{width:9px;}
+    }
+    &.prev,&.next{
+      i{width:5px;}
+    }
+    &.first i{background-position:0 0;}
+    &.prev i{background-position:-25px 0;}
+    &.next i{background-position:-50px 0;}
+    &.last i{background-position:-75px 0;}
+  }
+}

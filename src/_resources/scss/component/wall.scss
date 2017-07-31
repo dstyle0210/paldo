@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 쓰기,보기 영역(prefix : wall-) */
+.wall-default{position:relative;width:100%;box-sizing:border-box;padding:0 30px;border-top:$WALL-BORDER-TOP;border-bottom:$WALL-BORDER-BOTTOM;}
+
+/*! 프로필 쓰기,보기 영역(prefix : wall-) */
+.wall-profile{position:relative;width:100%;box-sizing:border-box;border-top:$WALL-BORDER-TOP;background:#222;
+  .board-write{width:778px;}
+  .profile-write{position:absolute;top:0;right:0;width:162px;
+    h4{box-sizing:border-box;padding-top:8px;font-size:16px;text-align:center;color:$COLOR-WHITE;height:41px;background:$WALL-BG-COLOR;}
+    .photo{margin:0 auto;width:120px;height:160px;background:url('../images/common/bg/bgProfileNull.jpg') no-repeat;
+      >img{width:120px;height:160px;}
+    }
+    .photoDesc{padding-top:10px;text-align:center;font-size:12px;line-height:15px;color:$COLOR-WHITE;}
+    .btnSec{margin-top:20px;}
+  }
+}
+
+/*! wall 안에 cpnt가 포함될경우의 커스텀 */
+[class^=wall-]{
+  .board-write,.board-write-vertical{border-top:0;}
+}
+/*! wall 안에 cpnt가 옆에 있는경우 커스텀 */
+.wall-default + .board-write,
+.wall-default + .board-write-vertical{border-top:0;}
+.wall-default + .form-dl{
+  dt{padding-left:20px;}
+}

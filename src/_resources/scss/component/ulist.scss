@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 설명리스트 공통(prefix : ulist-) */
+[class^=ulist-]{box-sizing:border-box;width:100%;padding:15px;
+  ul{width:100%;}
+  li{padding:3px 0;font-size:12px;line-height:1.3;
+    >*{vertical-align:middle;}
+  }
+}
+.ulist-default{background:transparent;}
+.ulist-lightGray{background:#f8f8f8;}

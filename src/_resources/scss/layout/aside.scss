@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 베너 : 이것만은 꼭 확인하자 */
+/*
+
+
+
+
+96
+85
+*/
+.shortBnrLayer{
+  $border:1px solid #ededed;
+  border:$border;@include clearfix();
+  h3{box-sizing:border-box;width:100%;background:#68ae29;color:$FONT-WHITE;text-align:center;line-height:1.3;}
+  >a{display:block;font-size:1px;line-height:1px;}
+
+  &.subType{
+    $wid:98px;
+    position:fixed;top:150px;left:50%;margin-left:($WRAP-WIDTH/2);width:96px;
+    h3{font-size:12px;padding:10px;}
+    h3 + a{border-bottom:$border;}
+    .close{display:none;}
+  }
+
+  &.mainType{
+    position:absolute;top:0;left:0;width:195px;
+    h3{width:100%;font-size:14px;padding:15px 10px;
+      br:first-child{display:none;}
+    }
+    h3 + a{border-right:$border;}
+    a{float:left;}
+    $cSize:28px;
+    .close{display:inline-block;position:absolute;top:0;right:$cSize * -1;width:$cSize;height:$cSize;background:#222 url('../images/common/ico/icoLayerClose.png') no-repeat;background-size:$cSize $cSize;}
+  }
+
+}
+

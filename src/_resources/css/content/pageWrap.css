@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+
+/*! 컨덴츠 > 페이지공통 */
+.pageWrap{margin:0 auto;padding-top:30px;padding-bottom:50px;width:940px}
+
+
+/*! 컨덴츠 > 레이어대기영역 */
+.layerSpace{display:none}

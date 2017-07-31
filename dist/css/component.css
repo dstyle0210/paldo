@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 리스트 공통(prefix : board-) */
+[class^=board-list]{width:100%;border-top:3px solid #111}
+
+/*! 게시판 > 리스트 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
+
+
+/*! 게시판 > 페이징(prefix : board-) */
+.board-paging *{vertical-align:top}
+.board-paging a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:1px solid #cecece;text-align:center;font-weight:700;font-size:12px}
+.board-paging a.n{padding-top:7px}
+.board-paging a.on{border:1px solid #e03627;color:#fff;background:#e03627}
+.board-paging a i{display:inline-block;height:9px;background-image:url(../images/common/bg/bgBoardPaging.gif);background-repeat:no-repeat}
+.board-paging a.first i,.board-paging a.last i{width:9px}
+.board-paging a.next i,.board-paging a.prev i{width:5px}
+.board-paging a.first i{background-position:0 0}
+.board-paging a.prev i{background-position:-25px 0}
+.board-paging a.next i{background-position:-50px 0}
+.board-paging a.last i{background-position:-75px 0}
+
+/*! 게시판 > 쓰기 공통(prefix : board-) */
+[class^=board-write]{width:100%;border-top:3px solid #111;background:#fff}
+[class^=board-write].border-null{border-top:0}
+
+/*! 게시판 > 쓰기 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
+.board-write table,.board-write-vertical table{width:100%}
+.board-write th{padding-left:20px;text-align:left;color:#252525}
+.board-write th .byte{font-weight:400;font-size:12px;color:#999}
+.board-write td,.board-write th{box-sizing:border-box;padding-top:10px;padding-bottom:10px;min-height:42px;border-bottom:1px solid #ececec;font-size:12px}
+.board-write td>*{vertical-align:top}
+.board-write td .row{padding-top:5px}
+.board-write td .row:first-child{padding-top:0}
+.board-write-vertical th{font-size:13px;color:#252525}
+.board-write-vertical th sub{display:block;bottom:0;padding-top:3px;font-weight:400;font-size:11px;line-height:1.2}
+.board-write-vertical td,.board-write-vertical th{box-sizing:border-box;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #ececec;border-left:1px solid #ececec;text-align:center}
+.board-write-vertical td:first-child,.board-write-vertical th:first-child{border-left:0}
+.board-write-vertical td.border-none,.board-write-vertical th.border-none,.board-write-vertical tr.border-none td{border-left:0}
+
+/*! 버튼 모듈(prefix : btn-) */
+a[class^=btn-]{box-sizing:border-box}
+a[class^=btn-] *{vertical-align:top}
+a[class^=btn-],a[class^=btn-]>span{display:inline-block}
+a.btn-xs{padding:5.5px 10px;height:22px;font-size:11px;line-height:7.33333px}
+a.btn-sm{padding:10.5px 30px;height:33px;font-size:12px;line-height:8px}
+a.btn-lg,a.btn-nm{padding:17px 30px;height:50px;font-size:16px;line-height:10.66667px}
+a.btn-default{padding:5.5px 30px;height:22px;font-size:12px;line-height:8px}
+a.btn-brand,a.btn-default,a.btn-submit{border:1px solid #e03627;color:#fff;background-color:#e03627}
+a.btn-cancel{border:1px solid #010101;color:#fff;background-color:#252525}
+a.btn-edit{border:1px solid #6eb92c;color:#fff;background-color:#6eb92c}
+a.btn-upload{border:1px solid #e03627;color:#fff;background-color:#e03627}
+a.btn-address{border:1px solid #cfcfcf;border-radius:3px;color:#252525;background-color:#fff}
+a.btn-close-brand,a.btn-close-brand-xs{width:22px;height:22px;border:1px solid #e03523;background:#e03627 url(../images/common/ico/icoTransparentCloseX.png) no-repeat 50% 50%}
+a.btn-close-brand span,a.btn-close-brand-xs span{display:none}
+a.btn-close-brand-xs{width:15px;height:15px;background-size:9px 9px}
+a.btn-add,a.btn-calc{height:22px;border:1px solid #ececec;background:#fff}
+a.btn-calc{padding-top:4px;width:22px;text-align:center}
+a.btn-add{position:relative;padding:0 22px 0 7px;width:62px;overflow:hidden;text-align:left;font-weight:700;font-size:11px;color:#333;line-height:18px}
+a.btn-add span{width:100%;height:20px;border-right:1px solid #ececec}
+a.btn-add i{position:absolute;top:4px;right:4px}
+.btn-sec-center{text-align:center}
+.btn-sec-tight>a{margin:0}
+
+/*! 레이어 컴포넌트(prefix:cpnt-) */
+.cpnt-layer{min-width:300px}
+.cpnt-layer .title{position:relative;width:100%;overflow:hidden;background:#e03627}
+.cpnt-layer .title h3{box-sizing:border-box;padding-left:25px;width:100%;height:40px;font-size:16px;color:#fff;line-height:40px}
+.cpnt-layer .title .close{position:absolute;top:0;right:0;width:40px;height:40px;background:#222 url(../images/common/ico/icoLayerClose.png) no-repeat}
+.cpnt-layer .cont{box-sizing:border-box;padding:30px 25px;width:100%;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;background:#fff}
+.cpnt-layer .ulistSec{margin-top:20px}
+.cpnt-layer .ulistSec li{font-size:11px}
+.cpnt-layer .btnSec{margin-top:30px}
+
+/*! 입력요소 공통적용(prefix : form-) */
+span[class^=form-] input,span[class^=form-] select,span[class^=form-] textarea{box-sizing:border-box;font-size:12px}
+span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^=form-] textarea:disabled{background:#f2f2f2}
+
+/*! 입력요소 > 셀렉트 (prefix : form-) */
+.form-select{display:inline-block;height:22px;font-size:1px}
+.form-select label{display:none}
+.form-select select{padding:0 10px;height:22px;border:1px solid #ececec;font-size:12px}
+
+/*! 입력요소 > 텍스트인풋 (prefix : form-) */
+.form-text{display:inline-block;height:22px;font-size:1px}
+.form-text>label{display:none}
+.form-text input[type=text]{padding:0 10px;height:22px;border:1px solid #ececec}
+
+/*! 입력요소 > 패스워드인풋 (prefix : form-) */
+.form-password{display:inline-block;height:22px}
+.form-password>label{display:none}
+.form-password input[type=password]{padding:0 10px;height:22px;border:1px solid #ececec}
+
+/*! 입력요소 > 라디오버튼 (prefix : form-) */
+.form-radio{display:inline-block;height:22px}
+.form-radio>label{display:none}
+.form-radio input[type=radio]+label{display:inline-block;height:22px;font-size:12px}
+
+/*! 입력요소 > 체크박스 (prefix : form-) */
+.form-checkbox{display:inline-block;height:22px}
+.form-checkbox>label{display:none}
+.form-checkbox input[type=checkbox]+label{display:inline-block;height:22px;font-size:12px}
+.form-checkbox input[type=checkbox]:disabled+label{color:#999}
+
+/*! 입력요소 > 텍스트에어리어 */
+.form-textarea{display:inline-block}
+.form-textarea>label{display:none}
+.form-textarea textarea{padding:10px;border:1px solid #ececec}
+
+/*! 입력요소 > 라벨 */
+.form-label{display:inline-block;height:22px;font-size:12px;line-height:22px}
+
+/*! 입력요소 > a버튼요소 (prefix : form-) */
+.form-btn{display:inline-block;height:22px}
+.form-btn>*{vertical-align:top}
+
+/*! 입력요소 > 입력요소 가운데 텍스트(prefix : form-) */
+.form-txt,.form-txt-tahoma{display:inline-block;height:22px;font-size:11px;line-height:22px}
+.form-txt-tahoma{font-family:tahoma}
+
+/*! 입력요소 > 입력요소 설명용 텍스트(우측)(prefix : form-) */
+.form-inline-desc{display:inline-block;padding-left:10px;height:22px;font-size:11px;color:#666;line-height:22px}
+
+/*! 입력요소 조합시 재조정 */
+.form-checkbox+.form-checkbox,.form-checkbox+.form-radio,.form-label+[class^=form-],.form-radio+.form-checkbox,.form-radio+.form-radio{margin-left:5px}
+[class^=form-]+.form-label{margin-left:15px}
+.form-textarea+.form-dl{border-bottom:0}
+
+/*! 입력요소 DL구조 */
+.form-dl{width:100%;overflow:hidden;border-bottom:1px solid #ececec}
+.form-dl dd,.form-dl dt{padding-top:10px;padding-bottom:10px}
+.form-dl dt{float:left;font-weight:700;font-size:13px;color:#252525}
+.form-dl dd{float:left}
+.form-dl dd>*{vertical-align:middle}
+.form-dl dd .form-label{font-size:11px}
+.form-dl dd .form-txt-tahoma{color:#999}
+
+/*! 아이콘들 : 아이콘 공통(prefix : ico-) */
+[class^=ico-]{display:inline-block;box-sizing:border-box;text-align:center;font-style:normal;font-size:1px;line-height:1px}
+
+/*! 아이콘들 : 아이콘(prefix : ico-) */
+.ico-txtCheckRed{width:12px;height:12px;background:url(../images/common/ico/icoTxtCheckRed.png) no-repeat}
+.ico-txtCheckGreen{width:12px;height:12px;background:url(../images/common/ico/icoTxtCheckGreen.png) no-repeat}
+.ico-txtNewRed{width:12px;height:12px;background:url(../images/common/ico/icoTxtNewRed.png) no-repeat}
+.ico-schedule{width:12px;height:12px;background:url(../images/common/ico/icoSchedule.png) no-repeat}
+.ico-threeCircleRed{width:12px;height:12px;background:url(../images/common/ico/icoThreeCircleRed.png) no-repeat}
+.ico-txtInfoRed{width:18px;height:18px;background:url(../images/common/ico/icoTxtInfoRed.png) no-repeat}
+.ico-titRhombus{width:23px;height:24px;background:url(../images/common/ico/icoTitRhombus.png) no-repeat}
+
+/*! 아이콘들 : 라디오(prefix : ico-) */
+.ico-radio-circleCheckRed,.ico-radio-lock{width:22px;height:22px;background-image:url(../images/common/bg/bgAgreeRadio.png);background-position:-29px 0;background-repeat:no-repeat}
+.ico-radio-circleCheckRed.on,.ico-radio-lock.on{background-position:0 0}
+.ico-radio-lock{width:12px;height:12px;background-image:url(../images/common/bg/bgLockRadio.png);background-position:-16px 0}
+.ico-radio-A,.ico-radio-Q,.ico-radio-minus,.ico-radio-plus{width:12px;height:12px;background-image:url(../images/common/bg/bgPlusMinusRadio.png);background-position:0 0;background-repeat:no-repeat}
+.ico-radio-A,.ico-radio-Q,.ico-radio-minus{background-position:0 -22px}
+.ico-radio-A,.ico-radio-Q{width:33px;height:23px;background-image:url(../images/common/bg/bgQnaRadio.png);background-position:0 0}
+.ico-radio-A{background-position:0 -32px}
+
+/*! 아이콘들 : 상태 */
+[class^=ico-condition]{padding:2px 5px;width:48px;height:17px;font-size:11px;color:#fff;line-height:11px;background-image:url(../images/common/ico/icoCondition.png);background-repeat:no-repeat}
+.ico-conditionRed{background-color:#e03627}
+.ico-conditionGreen{background-color:#6eb92c}
+.ico-conditionBlack{background-color:#252525}
+
+/*! 텍스트 공통(prefix : text-) */
+.text-point{color:#e03627!important}
+
+/*! 설명리스트 공통(prefix : ulist-) */
+[class^=ulist-]{box-sizing:border-box;padding:15px;width:100%}
+[class^=ulist-] ul{width:100%}
+[class^=ulist-] li{padding:3px 0;font-size:12px;line-height:1.3}
+[class^=ulist-] li>*{vertical-align:middle}
+.ulist-default{background:0 0}
+.ulist-lightGray{background:#f8f8f8}
+
+/*! 쓰기,보기 영역(prefix : wall-) */
+.wall-default{position:relative;box-sizing:border-box;padding:0 30px;width:100%;border-top:3px solid #111;border-bottom:1px solid #ececec}
+
+/*! 프로필 쓰기,보기 영역(prefix : wall-) */
+.wall-profile{position:relative;box-sizing:border-box;width:100%;border-top:3px solid #111;background:#222}
+.wall-profile .board-write{width:778px}
+.wall-profile .profile-write{position:absolute;top:0;right:0;width:162px}
+.wall-profile .profile-write h4{box-sizing:border-box;padding-top:8px;height:41px;text-align:center;font-size:16px;color:#fff;background:#111}
+.wall-profile .profile-write .photo{margin:0 auto;width:120px;height:160px;background:url(../images/common/bg/bgProfileNull.jpg) no-repeat}
+.wall-profile .profile-write .photo>img{width:120px;height:160px}
+.wall-profile .profile-write .photoDesc{padding-top:10px;text-align:center;font-size:12px;color:#fff;line-height:15px}
+.wall-profile .profile-write .btnSec{margin-top:20px}
+
+/*! wall 안에 cpnt가 포함될경우의 커스텀 */
+[class^=wall-] .board-write,[class^=wall-] .board-write-vertical{border-top:0}
+
+/*! wall 안에 cpnt가 옆에 있는경우 커스텀 */
+.wall-default+.board-write,.wall-default+.board-write-vertical{border-top:0}
+.wall-default+.form-dl dt{padding-left:20px}
