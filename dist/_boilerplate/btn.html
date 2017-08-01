@@ -31,6 +31,7 @@
         <a href="#" class="btn-xs btn-edit"><span>그외(edit)</span></a>
         <a href="#" class="btn-xs btn-upload"><span>사진업로드(photo)</span></a>
         <a href="#" class="btn-xs btn-address"><span>우편변호찾기</span></a>
+        <a href="#" class="btn-xs btn-search"><span>검색(search)</span></a>
     </div>
 
     <div>

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 채용공고 공통 */
+.recruitWrap{
+  .recruitH2{padding-bottom:30px;font-size:30px;line-height:30px;text-align:center;border-bottom:1px solid #cecece;color:$FONT-DARKGRAY;}
+}

@@ -56,6 +56,7 @@ $BTN-TXT-CANCEL:$COLOR-WHITE; // 취소, 거부 등 (부정적)
 $BTN-TXT-EDIT:$COLOR-WHITE; // 수정 , 다음단계등 (중립적)
 $BTN-TXT-UPLOAD:$COLOR-WHITE; // 파일 업로드
 $BTN-TXT-ADDRESS:$COLOR-DARKGRAY; // 우편주소 찾기
+$BTN-TXT-SEARCH:$COLOR-WHITE; // 검색
 
 $BTN-BG-DEFAULT:$COLOR-BRAND;
 $BTN-BG-BRAND:$COLOR-BRAND;
@@ -64,6 +65,7 @@ $BTN-BG-CANCEL:$COLOR-DARKGRAY; // 취소, 거부 등 (부정적)
 $BTN-BG-EDIT:$COLOR-GREEN; // 수정 , 다음단계등 (중립적)
 $BTN-BG-UPLOAD:$COLOR-RED; // 파일 업로드
 $BTN-BG-ADDRESS:$COLOR-WHITE; // 우편주소 찾기
+$BTN-BG-SEARCH:$COLOR-DARKGRAY; // 검색
 
 $BTN-BR-DEFAULT:1px solid $COLOR-BRAND;
 $BTN-BR-BRAND:1px solid $COLOR-BRAND;
@@ -72,6 +74,7 @@ $BTN-BR-CANCEL:1px solid #010101; // 취소, 거부 등 (부정적)
 $BTN-BR-EDIT:1px solid $BTN-BG-EDIT; // 수정 , 다음단계등 (중립적)
 $BTN-BR-UPLOAD:1px solid $BTN-BG-UPLOAD; // 파일 업로드
 $BTN-BR-ADDRESS:1px solid #cfcfcf; // 우편주소 찾기
+$BTN-BR-SEARCH:1px solid #010101; // 검색
 
 @import "../_lib/form-val.scss"; // 폼요소 변수
 @import "../_lib/wall-val.scss"; // 영역 변수

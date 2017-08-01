@@ -28,7 +28,9 @@
 .ico-radio-A{width:33px;height:23px;background-image:url('../images/common/bg/bgQnaRadio.png');background-repeat:no-repeat;background-position:0 -32px;}
 
 /*! 아이콘들 : 상태 */
-[class^=ico-condition]{font-size:11px;line-height:11px;padding:2px 5px;color:#fff;width:48px;height:17px;background-image:url('../images/common/ico/icoCondition.png');background-repeat:no-repeat;}
+[class^=ico-condition]{font-size:11px;line-height:11px;color:#fff;padding:2px 5px;width:48px;height:17px;background-image:url('../images/common/ico/icoCondition.png');background-repeat:no-repeat;
+  span{color:#fff!important;}
+}
 .ico-conditionRed{background-color:$COLOR-RED;}
 .ico-conditionGreen{background-color:$COLOR-GREEN;}
 .ico-conditionBlack{background-color:$COLOR-DARKGRAY;}

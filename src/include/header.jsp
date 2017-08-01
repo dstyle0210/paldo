@@ -28,7 +28,7 @@
             <div class="gnb">
                 <ul>
                     <li><a href="#" data-href="#gnbLnb0"><span>채용정보</span><i></i></a></li>
-                    <li><a href="#" data-href="#gnbLnb1"><span>입사지원</span><i></i></a></li>
+                    <li><a href="../application/createStep0Agree.jsp" data-href="#gnbLnb1"><span>입사지원</span><i></i></a></li>
                     <li><a href="#" data-href="#gnbLnb2"><span>회사소개</span><i></i></a></li>
                 </ul>
             </div>
@@ -65,13 +65,13 @@
             <div class="inner">
                 <div class="lnb0" id="gnbLnb0">
                     <a href="#"><span>채용안내</span></a>
-                    <a href="#"><span>채용공고</span></a>
+                    <a href="../recruit/noticeList.jsp"><span>채용공고</span></a>
                 </div>
                 <div class="lnb1" id="gnbLnb1">
-                    <a href="#"><span>지원서 작성</span></a>
-                    <a href="#"><span>지원서 수정</span></a>
-                    <a href="#"><span>합격자 조회</span></a>
-                    <a href="#"><span>지원서 조회</span></a>
+                    <a href="../application/createStep0Agree.jsp"><span>지원서 작성</span></a>
+                    <a href="../application/update.jsp"><span>지원서 수정</span></a>
+                    <a href="../application/pass.jsp"><span>합격자 조회</span></a>
+                    <a href="../application/read.jsp"><span>지원서 조회</span></a>
                 </div>
                 <div class="lnb2" id="gnbLnb2">
                     <a href="#"><span>기업사명</span></a>

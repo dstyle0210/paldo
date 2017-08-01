@@ -27,6 +27,7 @@
 
 /*! 아이콘들 : 상태 */
 [class^=ico-condition]{padding:2px 5px;width:48px;height:17px;font-size:11px;color:#fff;line-height:11px;background-image:url(../images/common/ico/icoCondition.png);background-repeat:no-repeat}
+[class^=ico-condition] span{color:#fff!important}
 .ico-conditionRed{background-color:#e03627}
 .ico-conditionGreen{background-color:#6eb92c}
 .ico-conditionBlack{background-color:#252525}

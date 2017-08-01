@@ -14,6 +14,7 @@ a.btn-cancel{border:1px solid #010101;color:#fff;background-color:#252525}
 a.btn-edit{border:1px solid #6eb92c;color:#fff;background-color:#6eb92c}
 a.btn-upload{border:1px solid #e03627;color:#fff;background-color:#e03627}
 a.btn-address{border:1px solid #cfcfcf;border-radius:3px;color:#252525;background-color:#fff}
+a.btn-search{border:1px solid #010101;color:#fff;background-color:#252525}
 a.btn-close-brand,a.btn-close-brand-xs{width:22px;height:22px;border:1px solid #e03523;background:#e03627 url(../images/common/ico/icoTransparentCloseX.png) no-repeat 50% 50%}
 a.btn-close-brand span,a.btn-close-brand-xs span{display:none}
 a.btn-close-brand-xs{width:15px;height:15px;background-size:9px 9px}

@@ -50,3 +50,6 @@
 
 /*! 컨덴츠 > 레이어대기영역 */
 .layerSpace{display:none}
+
+/*! 채용공고 공통 */
+.recruitWrap .recruitH2{padding-bottom:30px;border-bottom:1px solid #cecece;text-align:center;font-size:30px;color:#252525;line-height:30px}
