@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 약관동의 모듈 */
+.cpnt-agreeArticle{
+  >h3{padding-bottom:28px;font-size:20px;line-height:26px;color:#333;letter-spacing:-1px;
+    >*{vertical-align:top;}
+  }
+  .cont{box-sizing:border-box;width:100%;padding:25px;height:190px;border:1px solid #ccc;overflow-x:hidden;overflow-y:auto;
+    pre{line-height:23px;color:#666;}
+  }
+  .apply{padding-top:20px;text-align:right;
+    label{display:inline-block;height:22px;margin-left:30px;line-height:22px;
+      >*{vertical-align:top;}
+    }
+    input[type=radio]{display:none;}
+    input[type=radio]:checked + i.ico-radio-circleCheckRed{background-position:0 0;}
+  }
+}

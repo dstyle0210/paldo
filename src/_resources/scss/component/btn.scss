@@ -13,7 +13,7 @@ $BTN-BR-BRAND:1px solid $COLOR-BRAND;
 $BTN-BR-BLACK:1px solid #010101;
 $BTN-BR-GREEN:1px solid #6eb92c;
 */
-a[class^=btn-]{display:inline-block;box-sizing:border-box;
+a[class^=btn-]{display:inline-block;box-sizing:border-box;text-align:center;
   *{vertical-align:top;}
   >span{display:inline-block;}
 }

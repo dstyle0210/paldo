@@ -39,7 +39,7 @@
 .board-write-vertical td.border-none,.board-write-vertical th.border-none,.board-write-vertical tr.border-none td{border-left:0}
 
 /*! 버튼 모듈(prefix : btn-) */
-a[class^=btn-]{box-sizing:border-box}
+a[class^=btn-]{box-sizing:border-box;text-align:center}
 a[class^=btn-] *{vertical-align:top}
 a[class^=btn-],a[class^=btn-]>span{display:inline-block}
 a.btn-xs{padding:5.5px 10px;height:22px;font-size:11px;line-height:7.33333px}
@@ -61,6 +61,16 @@ a.btn-add span{width:100%;height:20px;border-right:1px solid #ececec}
 a.btn-add i{position:absolute;top:4px;right:4px}
 .btn-sec-center{text-align:center}
 .btn-sec-tight>a{margin:0}
+
+/*! 약관동의 모듈 */
+.cpnt-agreeArticle>h3{padding-bottom:28px;letter-spacing:-1px;font-size:20px;color:#333;line-height:26px}
+.cpnt-agreeArticle .apply label>*,.cpnt-agreeArticle>h3>*{vertical-align:top}
+.cpnt-agreeArticle .cont{box-sizing:border-box;padding:25px;width:100%;height:190px;overflow-x:hidden;overflow-y:auto;border:1px solid #ccc}
+.cpnt-agreeArticle .cont pre{color:#666;line-height:23px}
+.cpnt-agreeArticle .apply{padding-top:20px;text-align:right}
+.cpnt-agreeArticle .apply label{display:inline-block;margin-left:30px;height:22px;line-height:22px}
+.cpnt-agreeArticle .apply input[type=radio]{display:none}
+.cpnt-agreeArticle .apply input[type=radio]:checked+i.ico-radio-circleCheckRed{background-position:0 0}
 
 /*! 레이어 컴포넌트(prefix:cpnt-) */
 .cpnt-layer{min-width:300px}

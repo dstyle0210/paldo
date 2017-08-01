@@ -28,6 +28,24 @@
   }
 }
 
+/*! 입사지원 > 지원서작성 > 동의 */
+.applicationWrap.createStep0AgreeWrap{
+  // 약관영역
+  .agreeArticle{margin-top:50px;width:100%;}
+  .agreeArticle + .agreeArticle{margin-top:90px;}
+
+  // 전체동의
+  .agreeAllCheck{margin-top:50px;text-align:center;
+    label{display:inline-block;height:22px;line-height:22px;
+      >*{vertical-align:top;}
+      input{display:none;}
+      input:checked + i.ico-radio-circleCheckRed{background-position:0 0;}
+    }
+  }
+  .btnSec{margin-top:30px;text-align:center;}
+}
+
+
 /*! 입사지원 > 지원서작성 > 프로세스 오브젝트 */
 .createProcess{margin-top:50px;width:100%;
   $size:162px; // 원형의 가로,세로값.

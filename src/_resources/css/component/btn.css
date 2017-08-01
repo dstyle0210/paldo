@@ -2,7 +2,7 @@
 
 
 /*! 버튼 모듈(prefix : btn-) */
-a[class^=btn-]{box-sizing:border-box}
+a[class^=btn-]{box-sizing:border-box;text-align:center}
 a[class^=btn-] *{vertical-align:top}
 a[class^=btn-],a[class^=btn-]>span{display:inline-block}
 a.btn-xs{padding:5.5px 10px;height:22px;font-size:11px;line-height:7.33333px}

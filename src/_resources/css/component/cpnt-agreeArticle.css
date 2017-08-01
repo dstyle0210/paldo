@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+/*! 약관동의 모듈 */
+.cpnt-agreeArticle>h3{padding-bottom:28px;letter-spacing:-1px;font-size:20px;color:#333;line-height:26px}
+.cpnt-agreeArticle .apply label>*,.cpnt-agreeArticle>h3>*{vertical-align:top}
+.cpnt-agreeArticle .cont{box-sizing:border-box;padding:25px;width:100%;height:190px;overflow-x:hidden;overflow-y:auto;border:1px solid #ccc}
+.cpnt-agreeArticle .cont pre{color:#666;line-height:23px}
+.cpnt-agreeArticle .apply{padding-top:20px;text-align:right}
+.cpnt-agreeArticle .apply label{display:inline-block;margin-left:30px;height:22px;line-height:22px}
+.cpnt-agreeArticle .apply input[type=radio]{display:none}
+.cpnt-agreeArticle .apply input[type=radio]:checked+i.ico-radio-circleCheckRed{background-position:0 0}

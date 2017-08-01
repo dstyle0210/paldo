@@ -18,6 +18,17 @@
 .applicationWrap .createSuccessSec h3{padding-bottom:10px}
 
 
+/*! 입사지원 > 지원서작성 > 동의 */
+.applicationWrap.createStep0AgreeWrap .agreeArticle{margin-top:50px;width:100%}
+.applicationWrap.createStep0AgreeWrap .agreeArticle+.agreeArticle{margin-top:90px}
+.applicationWrap.createStep0AgreeWrap .agreeAllCheck{margin-top:50px;text-align:center}
+.applicationWrap.createStep0AgreeWrap .agreeAllCheck label{display:inline-block;height:22px;line-height:22px}
+.applicationWrap.createStep0AgreeWrap .agreeAllCheck label>*{vertical-align:top}
+.applicationWrap.createStep0AgreeWrap .agreeAllCheck label input{display:none}
+.applicationWrap.createStep0AgreeWrap .agreeAllCheck label input:checked+i.ico-radio-circleCheckRed{background-position:0 0}
+.applicationWrap.createStep0AgreeWrap .btnSec{margin-top:30px;text-align:center}
+
+
 /*! 입사지원 > 지원서작성 > 프로세스 오브젝트 */
 .createProcess{margin-top:50px;width:100%}
 .createProcess>ol{margin:0 auto;width:923px;overflow:hidden}
