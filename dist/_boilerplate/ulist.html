@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div class="ulist">
+<div class="ulist-default">
     <ul>
         <li><i class="ico-txtCheckGreen"></i> 인증번호 유효시간은 <b class="point">5</b>분입니다.</li>
         <li><i class="ico-txtCheckGreen"></i> 인증번호를 다시 받으려면<a href="#" class="point">[인증번호재발송]</a>을 클릭하세요.</li>

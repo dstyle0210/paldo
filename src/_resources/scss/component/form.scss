@@ -3,10 +3,12 @@
 @import "../_lib/mixin.scss";
 
 /*! 입력요소 공통적용(prefix : form-) */
-span[class^=form-]{
+span[class^=form-]{position:relative;
   input,select,textarea{box-sizing:border-box;font-size:$FORM-FONT-SIZE;
     &:disabled{background:#f2f2f2;}
   }
+  // 폼요소 안에 버튼이 있는 경우의 클래스.
+  .btn-inform{position:absolute;top:0;right:0;}
 }
 
 /*! 입력요소 > 셀렉트 (prefix : form-) */
@@ -27,7 +29,9 @@ span[class^=form-]{
 /*! 입력요소 > 라디오버튼 (prefix : form-) */
 .form-radio{display:inline-block;height:$FORM-INLINE-HEIGHT;
   >label{display:none;}
-  input[type=radio]+label{display:inline-block;font-size:$FORM-FONT-SIZE;height:$FORM-INLINE-HEIGHT;}
+  input[type=radio]+label{display:inline-block;font-size:$FORM-FONT-SIZE;height:$FORM-INLINE-HEIGHT;
+    *{vertical-align:middle;}
+  }
 }
 /*! 입력요소 > 체크박스 (prefix : form-) */
 .form-checkbox{display:inline-block;height:$FORM-INLINE-HEIGHT;
@@ -55,7 +59,9 @@ span[class^=form-]{
 .form-inline-desc{padding-left:10px;color:$COLOR-GRAY;display:inline-block;height:$FORM-INLINE-HEIGHT;font-size:11px;line-height:$FORM-INLINE-HEIGHT;}
 
 /*! 입력요소 조합시 재조정 */
-.form-radio + .form-radio,.form-radio + .form-checkbox,.form-checkbox + .form-radio,.form-checkbox + .form-checkbox{margin-left:5px;}
+.form-text,.form-radio,.form-checkbox,.form-select{
+  &+.form-text,&+.form-radio,&+.form-checkbox,&+.form-select{margin-left:5px;}
+}
 .form-label + [class^=form-]{margin-left:5px;}
 [class^=form-] + .form-label{margin-left:15px;}
 .form-textarea + .form-dl{border-bottom:0;}

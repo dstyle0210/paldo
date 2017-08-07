@@ -19,11 +19,6 @@
 <div style="width:940px;margin:0 auto;">
 
 <!-- 채용공고 : 게시판리스트 -->
-<!--
-<i class="ico-conditionRed"><span>접수중</span></i>
-        <i class="ico-conditionGreen"><span>D-20</span></i>
-        <i class="ico-conditionBlack"><span>마감</span></i>
--->
 <div class="board-list-recruit">
     <table>
         <col style="width:175px;">
@@ -85,34 +80,69 @@
 
 </div>
 
-<%--
-<!-- 게시판 쓰기(일반) -->
-<div class="board-write">
-    <table>
-        <tr>
-            <th></th>
-            <td></td>
-            <th></th>
-            <td></td>
-        </tr>
-        <tr>
-            <th></th>
-            <td colspan="3"></td>
-        </tr>
-        <tr>
-            <th></th>
-            <td></td>
-            <th></th>
-            <td></td>
-        </tr>
-        <tr>
-            <th></th>
-            <td colspan="3"></td>
-        </tr>
-    </table>
+<div style="width:940px;margin:40px auto 0;">
+    <!-- 게시판 검색 -->
+    <div class="board-search">
+        <div class="count">총 <span>10</span>개 정보</div>
+        <div class="searchForm">
+            <span class="form-select" data-ui="form-select">
+                <label for="search0">선택</label>
+                <select name="" id="search0" style="width:135px;">
+                    <option value="">선택1</option>
+                    <option value="">선택2</option>
+                    <option value="">선택3</option>
+                </select>
+            </span>
+            <span class="form-text" style="padding-right:40px;">
+                <label for="">1지망</label>
+                <input type="text" name="" id="" style="width:285px;" placeholder="키워드를 입력하세요">
+                <a href="#" class="btn-xs btn-search btn-inform"><span>검색</span></a>
+            </span>
+        </div>
+    </div>
+    <!-- // 게시판 검색 -->
 </div>
-<!-- // 게시판 쓰기(일반) -->
---%>
+
+<div style="width:940px;margin:40px auto 0;">
+    <!-- 게시판 쓰기(일반) -->
+    <div class="board-list">
+        <table>
+            <colgroup>
+                <col style="width:80px;" />
+                <col style="width:130px;" />
+                <col style="width:auto;" />
+                <col style="width:90px;" />
+                <col style="width:130px;" />
+            </colgroup>
+            <thead>
+            <tr>
+                <th>번호</th>
+                <th>답변여부</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>등록일</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="index">10</td>
+                <td class="cond"><span class="condText replyIn"><i class="ico-txtCheckRed"></i> 답변완료</span></td>
+                <td class="title"><a href="#">팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?</a> <i class="ico-radio-lock on"></i></td>
+                <td class="writer">홍길동</td>
+                <td class="date">2017-06-25</td>
+            </tr>
+            <tr>
+                <td class="index">9</td>
+                <td class="cond"><span class="condText">답변대기</span></td>
+                <td class="title"><a href="#">팔도 공채는 언제 뽑나요?</a>  </td>
+                <td class="writer">홍길동</td>
+                <td class="date">2017-06-25</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- // 게시판 쓰기(일반) -->
+</div>
 
 
 

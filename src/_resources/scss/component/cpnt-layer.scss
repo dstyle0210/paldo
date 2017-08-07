@@ -13,6 +13,7 @@
   $border:1px solid #ccc;
   .cont{box-sizing:border-box;padding:30px 25px;border-left:$border;border-right:$border;border-bottom:$border;width:100%;background:$BG-WHITE;}
   .ulistSec{margin-top:20px; // 공지형리스트의 경우
+    .ulist-lightGray{padding-left:15px;}
     li{font-size:11px;}
   }
   .btnSec{margin-top:30px;} // 버튼의 경우

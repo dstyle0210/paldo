@@ -4,3 +4,7 @@
 /*! 텍스트 공통(prefix : text-) */
 .text-point{color:#e03627!important}
 .text-green{color:#6eb92c!important}
+
+
+/*! 웹폰트 클래스 */
+.dotum{font-family:"dotum"}

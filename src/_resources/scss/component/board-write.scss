@@ -9,7 +9,7 @@
 
 /*! 게시판 > 쓰기 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
 .board-write{
-  table{width:100%;}
+  table{width:100%;table-layout:fixed;}
   th{text-align:left;color:$COLOR-DARKGRAY;font-size:13px;padding-left:20px;
     .byte{font-size:12px;color:#999;font-weight:400;}
   }

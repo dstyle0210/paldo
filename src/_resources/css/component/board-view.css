@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 상세 > 게시물정보 */
+.board-view-info{width:100%;border-top:1px solid #111;border-bottom:1px dotted #111}
+.board-view-info table{width:100%}
+.board-view-info td,.board-view-info th{box-sizing:border-box}
+.board-view-info thead th{padding:12px 30px;border-bottom:2px solid #111;text-align:left;font-size:14px;color:#252525;line-height:20px;background:#f9f9f9}
+.board-view-info thead th.Q *{vertical-align:top}
+.board-view-info thead th.Q .ico-radio-Q{margin-top:-1px;margin-right:15px}
+.board-view-info thead th.Q .ico-radio-lock{margin-top:4px}
+.board-view-info tbody tr:first-child td,.board-view-info tbody tr:first-child th{border-top:0}
+.board-view-info tbody td,.board-view-info tbody th{padding-top:15px;padding-bottom:15px;border-top:1px solid #ececec;letter-spacing:-1px}
+.board-view-info tbody th{padding-left:30px;text-align:left}
+.board-view-info tbody td.title{color:#252525}
+.board-view-info tbody td.date{font-size:12px;color:#666}
+.board-view-info tbody td.download{font-size:12px}
+.board-view-info tbody td.download b{font-weight:400;color:#252525}
+.board-view-info tbody td.download .dotum{color:#999}
+
+
+/*! 게시판 > 상세 */
+.board-view-content{box-sizing:border-box;padding:50px 20px;width:100%;overflow:hidden;border-bottom:1px solid #111;line-height:1.5}
+
+
+/*! 게시판 > 문의답변 */
+.board-view-answer{position:relative;box-sizing:border-box;padding:30px 30px 30px 200px;min-height:230px;width:100%;overflow:hidden;border-bottom:1px solid #111;line-height:1.5}
+.board-view-answer .date{position:absolute;top:20px;right:20px;font-weight:700;font-size:11px;color:#e03627;line-height:11px}
+.board-view-answer .date *{vertical-align:top}
+.board-view-answer .master{position:absolute;top:30px;left:30px;padding-top:150px;width:145px;text-align:center;font-weight:700;font-size:12px;background:url(../images/common/bg/bgBoardAnswer.png) no-repeat}
+.board-view-answer .answer{font-size:12px;color:#666;line-height:1.5}
+.board-view-answer .answer p{margin-top:10px}
+
+
+/*! 게시판 > 이전다음글 */
+.board-view-prevnext{width:100%;border-top:2px solid #111;border-bottom:1px solid #111}
+.board-view-prevnext table{width:100%;table-layout:fixed}
+.board-view-prevnext td,.board-view-prevnext th{box-sizing:border-box;padding-top:15px;padding-bottom:15px;border-top:1px solid #ececec}
+.board-view-prevnext .title *{vertical-align:middle}
+.board-view-prevnext .link a{display:inline-block;max-width:97%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1}
+.board-view-prevnext .date{font-size:12px;color:#666}
+.board-view-answer+.board-view-prevnext,.board-view-content+.board-view-prevnext{border-top:1px solid #111}

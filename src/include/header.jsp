@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <title><%if(cDep3!=""){%><%=cDep3 %> | <%}%><%if(cDep2!=""){%><%=cDep2 %> | <%}%><%if(cDep1!=""){%><%=cDep1 %> | <%}%>팔도 채용사이트</title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/nanumgothic.css">
     <link rel="stylesheet" href="../css/lib/colorbox.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/layout.css" />

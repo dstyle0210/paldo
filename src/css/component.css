@@ -1,25 +1,36 @@
 @charset "UTF-8";
 
 
-/*! 게시판 > 리스트 공통(prefix : board-) */
-[class^=board-list]{width:100%;border-top:3px solid #111}
+/*! 게시판 > 리스트 공통(prefix : board-list) */
+[class^=board-list]{width:100%;border-top:1px solid #111}
+[class^=board-list] table{width:100%;table-layout:fixed}
+[class^=board-list] td,[class^=board-list] th{box-sizing:border-box}
+[class^=board-list] thead th{padding:15px 0;border-bottom:2px solid #111;text-align:center;font-size:14px;color:#252525;line-height:14px}
+[class^=board-list] tbody tr:last-child td,[class^=board-list] tbody tr:last-child th{border-bottom:1px solid #111}
+[class^=board-list] tbody td{box-sizing:border-box;padding:15px 0;min-height:76px;border-bottom:1px solid #ececec;letter-spacing:-1px}
+[class^=board-list] tbody td.cond,[class^=board-list] tbody td.date,[class^=board-list] tbody td.index,[class^=board-list] tbody td.writer{text-align:center}
+[class^=board-list] tbody td.title a{display:inline-block;max-width:95%}
+[class^=board-list] tbody td.title strong{font-size:15px;line-height:20px}
+[class^=board-list] tbody td.title p{padding-top:7px;font-size:12px;color:#666}
+[class^=board-list]+.board-paging{margin-top:50px}
 
-/*! 게시판 > 리스트 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
-/*! 게시판 >리스트 > 채용공고형 */
+/*! 게시판 > 리스트 기본형(prefix : board-list) */
+.board-list tbody td{font-size:12px}
+.board-list tbody td.title a{display:inline-block;max-width:97%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1}
+.board-list span.condText *,.board-list tbody td.title *{vertical-align:middle}
+.board-list span.condText.replyIn{color:#e03627}
+
+/*! 게시판 >리스트 채용공고형(prefix : board-list) */
 .board-list-recruit{border-top:1px solid #111}
-.board-list-recruit td,.board-list-recruit th{box-sizing:border-box}
-.board-list-recruit thead th{padding:15px 0;border-bottom:3px solid #111;text-align:center;font-size:14px;color:#252525;line-height:14px;background:#f9f9f9}
-.board-list-recruit tbody td{box-sizing:border-box;padding:20px 0;min-height:76px;border-bottom:1px solid #ececec;letter-spacing:-1px}
+.board-list-recruit thead th{background-color:#f9f9f9}
 .board-list-recruit tbody td.type{text-align:center;font-weight:700;font-size:15px}
-.board-list-recruit tbody td.title a{display:inline-block;max-width:95%}
-.board-list-recruit tbody td.title strong{font-size:15px;line-height:20px}
-.board-list-recruit tbody td.date p,.board-list-recruit tbody td.title p{padding-top:7px;font-size:12px;color:#666}
-.board-list-recruit tbody td.date{text-align:center}
+.board-list-recruit tbody td.date p{padding-top:7px;font-size:12px;color:#666}
 .board-list-recruit tbody tr.closed td,.board-list-recruit tbody tr.closed td *{color:#999}
 
 /*! 게시판 > 페이징(prefix : board-) */
+.board-paging,.board-paging a{text-align:center}
 .board-paging *{vertical-align:top}
-.board-paging a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:1px solid #cecece;text-align:center;font-weight:700;font-size:12px}
+.board-paging a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:1px solid #cecece;font-weight:700;font-size:12px}
 .board-paging a.n{padding-top:7px}
 .board-paging a.on{border:1px solid #e03627;color:#fff;background:#e03627}
 .board-paging a i{display:inline-block;height:9px;background-image:url(../images/common/bg/bgBoardPaging.gif);background-repeat:no-repeat}
@@ -30,18 +41,62 @@
 .board-paging a.next i{background-position:-50px 0}
 .board-paging a.last i{background-position:-75px 0}
 
+/*! 게시판 > 리스트 검색영역(prefix : board-) */
+.board-search{position:relative;width:100%;height:26px}
+.board-search .count{display:inline-block;padding-top:3px;font-size:12px}
+.board-search .searchForm{position:absolute;top:0;right:0}
+.board-search+.board-list{margin-top:30px}
+
+/*! 게시판 > 상세 > 게시물정보 */
+.board-view-info{width:100%;border-top:1px solid #111;border-bottom:1px dotted #111}
+.board-view-info table{width:100%}
+.board-view-info td,.board-view-info th{box-sizing:border-box}
+.board-view-info thead th{padding:12px 30px;border-bottom:2px solid #111;text-align:left;font-size:14px;color:#252525;line-height:20px;background:#f9f9f9}
+.board-view-info thead th.Q *{vertical-align:top}
+.board-view-info thead th.Q .ico-radio-Q{margin-top:-1px;margin-right:15px}
+.board-view-info thead th.Q .ico-radio-lock{margin-top:4px}
+.board-view-info tbody tr:first-child td,.board-view-info tbody tr:first-child th{border-top:0}
+.board-view-info tbody td,.board-view-info tbody th{padding-top:15px;padding-bottom:15px;border-top:1px solid #ececec;letter-spacing:-1px}
+.board-view-info tbody th{padding-left:30px;text-align:left}
+.board-view-info tbody td.title{color:#252525}
+.board-view-info tbody td.date{font-size:12px;color:#666}
+.board-view-info tbody td.download{font-size:12px}
+.board-view-info tbody td.download b{font-weight:400;color:#252525}
+.board-view-info tbody td.download .dotum{color:#999}
+
+/*! 게시판 > 상세 */
+.board-view-content{box-sizing:border-box;padding:50px 20px;width:100%;overflow:hidden;border-bottom:1px solid #111;line-height:1.5}
+
+/*! 게시판 > 문의답변 */
+.board-view-answer{position:relative;box-sizing:border-box;padding:30px 30px 30px 200px;min-height:230px;width:100%;overflow:hidden;border-bottom:1px solid #111;line-height:1.5}
+.board-view-answer .date{position:absolute;top:20px;right:20px;font-weight:700;font-size:11px;color:#e03627;line-height:11px}
+.board-view-answer .date *{vertical-align:top}
+.board-view-answer .master{position:absolute;top:30px;left:30px;padding-top:150px;width:145px;text-align:center;font-weight:700;font-size:12px;background:url(../images/common/bg/bgBoardAnswer.png) no-repeat}
+.board-view-answer .answer{font-size:12px;color:#666;line-height:1.5}
+.board-view-answer .answer p{margin-top:10px}
+
+/*! 게시판 > 이전다음글 */
+.board-view-prevnext{width:100%;border-top:2px solid #111;border-bottom:1px solid #111}
+.board-view-prevnext table{width:100%;table-layout:fixed}
+.board-view-prevnext td,.board-view-prevnext th{box-sizing:border-box;padding-top:15px;padding-bottom:15px;border-top:1px solid #ececec}
+.board-view-prevnext .title *{vertical-align:middle}
+.board-view-prevnext .link a{display:inline-block;max-width:97%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1}
+.board-view-prevnext .date{font-size:12px;color:#666}
+.board-view-answer+.board-view-prevnext,.board-view-content+.board-view-prevnext{border-top:1px solid #111}
+
 /*! 게시판 > 쓰기 공통(prefix : board-) */
 [class^=board-write]{width:100%;border-top:3px solid #111;background:#fff}
 [class^=board-write].border-null{border-top:0}
 
 /*! 게시판 > 쓰기 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
-.board-write table,.board-write-vertical table{width:100%}
+.board-write table{width:100%;table-layout:fixed}
 .board-write th{padding-left:20px;text-align:left;color:#252525}
 .board-write th .byte{font-weight:400;font-size:12px;color:#999}
 .board-write td,.board-write th{box-sizing:border-box;padding-top:10px;padding-bottom:10px;min-height:42px;border-bottom:1px solid #ececec;font-size:12px}
 .board-write td>*{vertical-align:top}
 .board-write td .row{padding-top:5px}
 .board-write td .row:first-child{padding-top:0}
+.board-write-vertical table{width:100%}
 .board-write-vertical th{font-size:13px;color:#252525}
 .board-write-vertical th sub{display:block;bottom:0;padding-top:3px;font-weight:400;font-size:11px;line-height:1.2}
 .board-write-vertical td,.board-write-vertical th{box-sizing:border-box;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #ececec;border-left:1px solid #ececec;text-align:center}
@@ -90,12 +145,15 @@ a.btn-add i{position:absolute;top:4px;right:4px}
 .cpnt-layer .title .close{position:absolute;top:0;right:0;width:40px;height:40px;background:#222 url(../images/common/ico/icoLayerClose.png) no-repeat}
 .cpnt-layer .cont{box-sizing:border-box;padding:30px 25px;width:100%;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;background:#fff}
 .cpnt-layer .ulistSec{margin-top:20px}
+.cpnt-layer .ulistSec .ulist-lightGray{padding-left:15px}
 .cpnt-layer .ulistSec li{font-size:11px}
 .cpnt-layer .btnSec{margin-top:30px}
 
 /*! 입력요소 공통적용(prefix : form-) */
+span[class^=form-]{position:relative}
 span[class^=form-] input,span[class^=form-] select,span[class^=form-] textarea{box-sizing:border-box;font-size:12px}
 span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^=form-] textarea:disabled{background:#f2f2f2}
+span[class^=form-] .btn-inform{position:absolute;top:0;right:0}
 
 /*! 입력요소 > 셀렉트 (prefix : form-) */
 .form-select{display:inline-block;height:22px;font-size:1px}
@@ -116,6 +174,7 @@ span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^
 .form-radio{display:inline-block;height:22px}
 .form-radio>label{display:none}
 .form-radio input[type=radio]+label{display:inline-block;height:22px;font-size:12px}
+.form-radio input[type=radio]+label *{vertical-align:middle}
 
 /*! 입력요소 > 체크박스 (prefix : form-) */
 .form-checkbox{display:inline-block;height:22px}
@@ -143,7 +202,7 @@ span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^
 .form-inline-desc{display:inline-block;padding-left:10px;height:22px;font-size:11px;color:#666;line-height:22px}
 
 /*! 입력요소 조합시 재조정 */
-.form-checkbox+.form-checkbox,.form-checkbox+.form-radio,.form-label+[class^=form-],.form-radio+.form-checkbox,.form-radio+.form-radio{margin-left:5px}
+.form-checkbox+.form-checkbox,.form-checkbox+.form-radio,.form-checkbox+.form-select,.form-checkbox+.form-text,.form-label+[class^=form-],.form-radio+.form-checkbox,.form-radio+.form-radio,.form-radio+.form-select,.form-radio+.form-text,.form-select+.form-checkbox,.form-select+.form-radio,.form-select+.form-select,.form-select+.form-text,.form-text+.form-checkbox,.form-text+.form-radio,.form-text+.form-select,.form-text+.form-text{margin-left:5px}
 [class^=form-]+.form-label{margin-left:15px}
 .form-textarea+.form-dl{border-bottom:0}
 
@@ -167,11 +226,17 @@ span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^
 .ico-threeCircleRed{width:12px;height:12px;background:url(../images/common/ico/icoThreeCircleRed.png) no-repeat}
 .ico-txtInfoRed{width:18px;height:18px;background:url(../images/common/ico/icoTxtInfoRed.png) no-repeat}
 .ico-titRhombus{width:23px;height:24px;background:url(../images/common/ico/icoTitRhombus.png) no-repeat}
+.ico-noticeDesc{width:35px;height:28px;background:url(../images/common/ico/icoNoticeDesc.png) no-repeat}
+.ico-txtGrayBoxSmall{width:3px;height:12px;background:url(../images/common/ico/icoSmallGrayBox.gif) no-repeat}
+[class^=ico-boardBox]{width:16px;height:16px;border:1px solid #ececec;background-image:url(../images/common/ico/icoBoardPrevNext.gif);background-repeat:no-repeat}
+.ico-boardBoxPrev{background-position:5px 1px}
+.ico-boardBoxNext{background-position:-20px 1px}
 
 /*! 아이콘들 : 라디오(prefix : ico-) */
 .ico-radio-circleCheckRed,.ico-radio-lock{width:22px;height:22px;background-image:url(../images/common/bg/bgAgreeRadio.png);background-position:-29px 0;background-repeat:no-repeat}
 .ico-radio-circleCheckRed.on,.ico-radio-lock.on{background-position:0 0}
 .ico-radio-lock{width:12px;height:12px;background-image:url(../images/common/bg/bgLockRadio.png);background-position:-16px 0}
+.ico-radioBox{padding-top:3px;width:22px;height:22px;border:1px solid #ececec}
 .ico-radio-A,.ico-radio-Q,.ico-radio-minus,.ico-radio-plus{width:12px;height:12px;background-image:url(../images/common/bg/bgPlusMinusRadio.png);background-position:0 0;background-repeat:no-repeat}
 .ico-radio-A,.ico-radio-Q,.ico-radio-minus{background-position:0 -22px}
 .ico-radio-A,.ico-radio-Q{width:33px;height:23px;background-image:url(../images/common/bg/bgQnaRadio.png);background-position:0 0}
@@ -188,8 +253,11 @@ span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^
 .text-point{color:#e03627!important}
 .text-green{color:#6eb92c!important}
 
+/*! 웹폰트 클래스 */
+.dotum{font-family:"dotum"}
+
 /*! 설명리스트 공통(prefix : ulist-) */
-[class^=ulist-]{box-sizing:border-box;padding:15px;width:100%}
+[class^=ulist-]{box-sizing:border-box;padding:15px 0;width:100%}
 [class^=ulist-] ul{width:100%}
 [class^=ulist-] li{padding:3px 0;font-size:12px;line-height:1.3}
 [class^=ulist-] li>*{vertical-align:middle}

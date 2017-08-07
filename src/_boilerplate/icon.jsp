@@ -18,6 +18,10 @@
 <body>
 <div class="boilerplate">
     <div>
+        <i class="ico-boardBoxPrev"></i>
+        <i class="ico-boardBoxNext"></i>
+    </div>
+    <div>
         <!-- 텍스트 옆 체크 아이콘 -->
         <i class="ico-txtCheckRed"></i>
         <i class="ico-txtCheckGreen"></i>
@@ -44,6 +48,14 @@
     </div>
     <div>
         <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-noticeDesc"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
+        <i class="ico-txtGrayBoxSmall"></i>
+    </div>
+    <div>
+        <!-- 텍스트 뒤 뉴 아이콘 -->
         <i class="ico-conditionRed"><span>접수중</span></i>
         <i class="ico-conditionGreen"><span>D-20</span></i>
         <i class="ico-conditionBlack"><span>마감</span></i>
@@ -62,7 +74,9 @@
     <div>
         <!-- 텍스트 뒤 뉴 아이콘 -->
         <i class="ico-radio-plus"></i>
+        <i class="ico-radioBox"><i class="ico-radio-plus"></i></i>
         <i class="ico-radio-minus"></i>
+        <i class="ico-radioBox"><i class="ico-radio-minus"></i></i>
     </div>
     <div>
         <!-- 텍스트 뒤 뉴 아이콘 -->

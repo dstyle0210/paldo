@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+
+/*! 유틸 공통 */
+.utilWrap .utilH2{padding-bottom:30px;border-bottom:1px solid #ececec;text-align:center;font-size:30px;color:#252525;line-height:30px}
+
+
+/*! 유틸 > 1:1 문의 > 리스트 */
+.qnaListSec{margin-top:50px}
+.qnaListSec .btnSec{margin-top:50px;text-align:center}
+.qnaListSec .btnSec a{width:190px}
+
+
+/*! 유틸 > 1:1 문의 > 상세 */
+.qnaViewSec{margin-top:50px}
+.qnaViewSec .btnSec{margin-top:50px;text-align:center}
+.qnaViewSec .btnSec a{width:190px}
+
+
+/*! 유틸 > 1:1 문의 > 쓰기 */
+.qnaCreateSec,.qnaCreateSec .createArticle{margin-top:50px}
+.qnaCreateSec .createArticle>h3{padding-bottom:22px;letter-spacing:-1px;font-size:16px;color:#333;line-height:14px}
+.qnaCreateSec .createArticle>h3>*{vertical-align:top}
+.qnaCreateSec .createArticle:first-child{margin-top:0}
+.qnaCreateSec .form-txt{color:#666}
+.qnaCreateSec .form-radio+.form-radio{margin-left:20px}
+.qnaCreateSec .btnSec{margin-top:50px;text-align:center}
+.qnaCreateSec .btnSec a{width:190px}
+
+
+/*! 유틸 > FAQ > 상단코멘트 */
+.faqDescSec{margin-top:50px;padding-top:85px;width:100%;text-align:center;background:url(../images/common/bg/bgFaqDesc.gif) no-repeat 50% 0}
+.faqDescSec .desc{font-size:14px;line-height:20px}
+.faqDescSec .btnSec{margin-top:30px}
+
+
+/*! 유틸 > FAQ > 카테고리선택 */
+.faqSelectRadioSec{margin-top:50px;width:100%;height:45px;text-align:center;background:url(../images/common/bg/bgFaq.gif) repeat-x}
+.faqSelectRadioSec label{display:inline-block;padding:0 15px;font-weight:700;font-size:12px;color:#fff;line-height:45px}
+.faqSelectRadioSec label *{line-height:45px}
+
+
+/*! 유틸 > FAQ > 리스트 */
+.faqListSec{width:100%;overflow:hidden}
+.faqListSec dl{width:100%}
+.faqListSec dl dd,.faqListSec dl dt{position:relative;box-sizing:border-box;width:100%;overflow:hidden;border-bottom:1px solid #ececec}
+.faqListSec dl dt a{display:block;box-sizing:border-box;padding-left:63px;width:100%;height:52px;line-height:52px}
+.faqListSec dl dt a span{display:inline-block;width:820px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1}
+.faqListSec dl dt a .ico-radio-Q{position:absolute;top:15px;left:20px}
+.faqListSec dl dt a .ico-radioBox{position:absolute;top:15px;right:20px}
+.faqListSec dl dt .ico-radio-plus{display:inline-block}
+.faqListSec dl dt .ico-radio-minus,.faqListSec dl dt.open .ico-radio-plus{display:none}
+.faqListSec dl dt.open .ico-radio-minus{display:inline-block}
+.faqListSec dl dd{display:none;padding:25px 20px 25px 82px;background:#fdfdfd}
+.faqListSec dl dd.open{display:block}
+.faqListSec dl dd .ico-radio-A{position:absolute;top:25px;left:20px}
+.faqListSec dl dd .desc{font-size:12px;color:#666;line-height:18px}

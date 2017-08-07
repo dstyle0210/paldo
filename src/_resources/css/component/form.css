@@ -2,8 +2,10 @@
 
 
 /*! 입력요소 공통적용(prefix : form-) */
+span[class^=form-]{position:relative}
 span[class^=form-] input,span[class^=form-] select,span[class^=form-] textarea{box-sizing:border-box;font-size:12px}
 span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^=form-] textarea:disabled{background:#f2f2f2}
+span[class^=form-] .btn-inform{position:absolute;top:0;right:0}
 
 
 /*! 입력요소 > 셀렉트 (prefix : form-) */
@@ -28,6 +30,7 @@ span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^
 .form-radio{display:inline-block;height:22px}
 .form-radio>label{display:none}
 .form-radio input[type=radio]+label{display:inline-block;height:22px;font-size:12px}
+.form-radio input[type=radio]+label *{vertical-align:middle}
 
 
 /*! 입력요소 > 체크박스 (prefix : form-) */
@@ -62,7 +65,7 @@ span[class^=form-] input:disabled,span[class^=form-] select:disabled,span[class^
 
 
 /*! 입력요소 조합시 재조정 */
-.form-checkbox+.form-checkbox,.form-checkbox+.form-radio,.form-label+[class^=form-],.form-radio+.form-checkbox,.form-radio+.form-radio{margin-left:5px}
+.form-checkbox+.form-checkbox,.form-checkbox+.form-radio,.form-checkbox+.form-select,.form-checkbox+.form-text,.form-label+[class^=form-],.form-radio+.form-checkbox,.form-radio+.form-radio,.form-radio+.form-select,.form-radio+.form-text,.form-select+.form-checkbox,.form-select+.form-radio,.form-select+.form-select,.form-select+.form-text,.form-text+.form-checkbox,.form-text+.form-radio,.form-text+.form-select,.form-text+.form-text{margin-left:5px}
 [class^=form-]+.form-label{margin-left:15px}
 .form-textarea+.form-dl{border-bottom:0}
 

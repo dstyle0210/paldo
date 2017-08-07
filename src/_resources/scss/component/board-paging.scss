@@ -7,6 +7,7 @@
   $on:$BG-BRAND;
   $border-on:1px solid $on;
   $border-off:1px solid #cecece;
+  text-align:center;
   *{vertical-align:top;}
   a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:$border-off;font-size:12px;text-align:center;font-weight:700;
     &.n{padding-top:7px;}

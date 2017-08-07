@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 게시판 > 상세 > 게시물정보 */
+.board-view-info{width:100%;border-top:1px solid $WALL-BG-COLOR;border-bottom:1px dotted $WALL-BG-COLOR;
+  table{width:100%;}
+  th,td{box-sizing:border-box;}
+  thead th{padding:12px 30px;background:#f9f9f9;font-size:14px;line-height:20px;color:$FONT-DARKGRAY;border-bottom:2px solid $WALL-BG-COLOR;text-align:left;
+    &.Q{
+      *{vertical-align:top;}
+      .ico-radio-Q{margin-top:-1px;margin-right:15px;}
+      .ico-radio-lock{margin-top:4px;}
+    }
+  }
+  tbody{
+    tr:first-child{
+      th,td{border-top:0;}
+    }
+    th,td{padding-top:15px;padding-bottom:15px;border-top:$WALL-BORDER-BOTTOM;letter-spacing:-1px;
+    }
+    th{padding-left:30px;text-align:left;}
+    td.title{color:$FONT-DARKGRAY;}
+    td.date{font-size:12px;color:$FONT-GRAY;}
+    td.download{font-size:12px;
+      b{font-weight:400;color:$FONT-DARKGRAY;}
+      .dotum{color:$FONT-LIGHTGRAY;}
+    }
+  }
+}
+
+
+/*! 게시판 > 상세 */
+.board-view-content{width:100%;box-sizing:border-box;padding:50px 20px;line-height:1.5;overflow:hidden;border-bottom:1px solid $WALL-BG-COLOR;}
+
+/*! 게시판 > 문의답변 */
+.board-view-answer{position:relative;width:100%;min-height:230px;box-sizing:border-box;padding:30px 30px 30px 200px;line-height:1.5;overflow:hidden;border-bottom:1px solid $WALL-BG-COLOR;
+  .date{position:absolute;top:20px;right:20px;font-size:11px;line-height:11px;color:$COLOR-BRAND;font-weight:700;
+    *{vertical-align:top;}
+  }
+  .master{position:absolute;top:30px;left:30px;width:145px;padding-top:150px;font-size:12px;font-weight:700;text-align:center;background:url('../images/common/bg/bgBoardAnswer.png') no-repeat;}
+  .answer{font-size:12px;color:$COLOR-GRAY;line-height:1.5;
+    p{margin-top:10px;}
+  }
+}
+
+/*! 게시판 > 이전다음글 */
+.board-view-prevnext{width:100%;border-top:2px solid $WALL-BG-COLOR;border-bottom:1px solid $WALL-BG-COLOR;
+  table{width:100%;table-layout:fixed;}
+  th,td{box-sizing:border-box;padding-top:15px;padding-bottom:15px;border-top:$WALL-BORDER-BOTTOM;}
+  .title *{vertical-align:middle;}
+  .link a{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; zoom:1;max-width:97%;}
+  .date{font-size:12px;color:$FONT-GRAY;}
+}
+.board-view-content,.board-view-answer{
+  & + .board-view-prevnext{border-top:1px solid $WALL-BG-COLOR;}
+}

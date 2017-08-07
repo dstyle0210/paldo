@@ -13,12 +13,18 @@
 .ico-threeCircleRed{width:12px;height:12px;background:url(../images/common/ico/icoThreeCircleRed.png) no-repeat}
 .ico-txtInfoRed{width:18px;height:18px;background:url(../images/common/ico/icoTxtInfoRed.png) no-repeat}
 .ico-titRhombus{width:23px;height:24px;background:url(../images/common/ico/icoTitRhombus.png) no-repeat}
+.ico-noticeDesc{width:35px;height:28px;background:url(../images/common/ico/icoNoticeDesc.png) no-repeat}
+.ico-txtGrayBoxSmall{width:3px;height:12px;background:url(../images/common/ico/icoSmallGrayBox.gif) no-repeat}
+[class^=ico-boardBox]{width:16px;height:16px;border:1px solid #ececec;background-image:url(../images/common/ico/icoBoardPrevNext.gif);background-repeat:no-repeat}
+.ico-boardBoxPrev{background-position:5px 1px}
+.ico-boardBoxNext{background-position:-20px 1px}
 
 
 /*! 아이콘들 : 라디오(prefix : ico-) */
 .ico-radio-circleCheckRed,.ico-radio-lock{width:22px;height:22px;background-image:url(../images/common/bg/bgAgreeRadio.png);background-position:-29px 0;background-repeat:no-repeat}
 .ico-radio-circleCheckRed.on,.ico-radio-lock.on{background-position:0 0}
 .ico-radio-lock{width:12px;height:12px;background-image:url(../images/common/bg/bgLockRadio.png);background-position:-16px 0}
+.ico-radioBox{padding-top:3px;width:22px;height:22px;border:1px solid #ececec}
 .ico-radio-A,.ico-radio-Q,.ico-radio-minus,.ico-radio-plus{width:12px;height:12px;background-image:url(../images/common/bg/bgPlusMinusRadio.png);background-position:0 0;background-repeat:no-repeat}
 .ico-radio-A,.ico-radio-Q,.ico-radio-minus{background-position:0 -22px}
 .ico-radio-A,.ico-radio-Q{width:33px;height:23px;background-image:url(../images/common/bg/bgQnaRadio.png);background-position:0 0}

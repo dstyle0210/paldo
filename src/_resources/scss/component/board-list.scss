@@ -2,36 +2,64 @@
 @import "../_lib/val.scss";
 @import "../_lib/mixin.scss";
 
-/*! 게시판 > 리스트 공통(prefix : board-) */
-[class^=board-list]{width:100%;border-top:$WALL-BORDER-TOP;}
+/*! 게시판 > 리스트 공통(prefix : board-list) */
+[class^=board-list]{width:100%;border-top:1px solid $WALL-BG-COLOR;
+  table{width:100%;table-layout:fixed;}
+  th,td{box-sizing:border-box;}
+  thead th{padding:15px 0;font-size:14px;line-height:14px;color:$FONT-DARKGRAY;text-align:center;border-bottom:2px solid $WALL-BG-COLOR;}
+  tbody{
+    tr:last-child{
+      th,td{border-bottom:1px solid $WALL-BG-COLOR;}
+    }
+    td{box-sizing:border-box;padding:15px 0;min-height:76px;border-bottom:$WALL-BORDER-BOTTOM;letter-spacing:-1px;
+      // 번호(게시물인덱스)
+      &.index{text-align:center;}
+      // 제목
+      &.title{
+        a{display:inline-block;max-width:95%;}
+        strong{font-size:15px;line-height:20px;}
+        p{padding-top:7px;font-size:12px;color:#666;}
+      }
+      // 상태
+      &.cond{text-align:center;}
+      // 일자
+      &.date{text-align:center;}
+      // 작성자
+      &.writer{text-align:center;}
+    }
+  }
+  // 페이징 연결
+  + .board-paging{margin-top:50px;}
+}
 
-/*! 게시판 > 리스트 기본형(prefix : board-) : th와 td가 tr안에 함께 있음. */
+/*! 게시판 > 리스트 기본형(prefix : board-list) */
 .board-list{
-
+  tbody{
+    td{font-size:12px;}
+    td.title{
+      a{display:inline-block;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; zoom:1;max-width:97%;}
+      *{vertical-align:middle;}
+    }
+  }
+  span.condText{
+    *{vertical-align:middle;}
+    &.replyIn{color:$COLOR-BRAND;}
+  }
 }
 
 
 
-/*! 게시판 >리스트 > 채용공고형 */
+/*! 게시판 >리스트 채용공고형(prefix : board-list) */
 .board-list-recruit{border-top:1px solid $WALL-BG-COLOR;
-  th,td{box-sizing:border-box;}
-  thead th{padding:15px 0;background:#f9f9f9;font-size:14px;line-height:14px;color:$FONT-DARKGRAY;text-align:center;border-bottom:3px solid $WALL-BG-COLOR;}
-  tbody td{box-sizing:border-box;padding:20px 0;min-height:76px;border-bottom:$WALL-BORDER-BOTTOM;letter-spacing:-1px;
+  thead th{background-color:#f9f9f9;}
+  tbody{
     // 입사형식
-    &.type{font-size:15px;text-align:center;font-weight:700;}
-    // 공고제목
-    &.title{
-      a{display:inline-block;max-width:95%;}
-      strong{font-size:15px;line-height:20px;}
-      p{padding-top:7px;font-size:12px;color:#666;}
+    td.type{font-size:15px;text-align:center;font-weight:700;}
+    // 일자
+    td.date p{padding-top:7px;font-size:12px;color:#666;}
+    // 마감
+    tr.closed td{color:#999;
+      *{color:#999;}
     }
-    // 공고일자
-    &.date{text-align:center;
-      p{padding-top:7px;font-size:12px;color:#666;}
-    }
-  }
-  tbody tr.closed td{
-    color:#999;
-    *{color:#999;}
   }
 }

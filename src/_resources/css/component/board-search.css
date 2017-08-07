@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 리스트 검색영역(prefix : board-) */
+.board-search{position:relative;width:100%;height:26px}
+.board-search .count{display:inline-block;padding-top:3px;font-size:12px}
+.board-search .searchForm{position:absolute;top:0;right:0}
+.board-search+.board-list{margin-top:30px}

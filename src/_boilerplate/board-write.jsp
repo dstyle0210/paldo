@@ -296,6 +296,16 @@
                 <span class="form-inline-desc">이메일은 합격자 발표시 사용됨</span>
             </td>
         </tr>
+        <tr>
+            <th>버튼조합</th>
+            <td colspan="3">
+                <span class="form-text" style="padding-right:40px;">
+                    <label for="">1지망</label>
+                    <input type="text" name="" id="" style="width:235px;" placeholder="키워드를 입력하세요">
+                    <a href="#" class="btn-xs btn-search btn-inform"><span>검색</span></a>
+                </span>
+            </td>
+        </tr>
     </table>
 </div>
 <!-- // 게시판 쓰기(일반) -->

@@ -2,8 +2,9 @@
 
 
 /*! 게시판 > 페이징(prefix : board-) */
+.board-paging,.board-paging a{text-align:center}
 .board-paging *{vertical-align:top}
-.board-paging a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:1px solid #cecece;text-align:center;font-weight:700;font-size:12px}
+.board-paging a{display:inline-block;box-sizing:border-box;padding-top:10px;min-width:30px;height:30px;border:1px solid #cecece;font-weight:700;font-size:12px}
 .board-paging a.n{padding-top:7px}
 .board-paging a.on{border:1px solid #e03627;color:#fff;background:#e03627}
 .board-paging a i{display:inline-block;height:9px;background-image:url(../images/common/bg/bgBoardPaging.gif);background-repeat:no-repeat}

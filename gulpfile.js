@@ -223,7 +223,7 @@ gulp.task("dist",function(){
                 var html = "<!doctype html><html lang='ko'><head><title>팔도채용사이트목록</title><meta charset='UTF-8'></head><body>";
                 _.each(fileLists,function(link){
                     var href = (link.url).replace("./dist/","");
-                    html += "<a href='"+href+"'>"+link.title+"</a><br />\n";
+                    html += "<a href='"+href+"'>"+link.title+"::("+href+")</a><br />\n";
                 });
                 html += "</body></html>";
                 fs.writeFileSync("./dist/index.html",html);

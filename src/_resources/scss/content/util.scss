@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! 유틸 공통 */
+.utilWrap{
+  .utilH2{padding-bottom:30px;font-size:30px;line-height:30px;text-align:center;border-bottom:1px solid $COLOR-LIGHTGRAY;color:$FONT-DARKGRAY;}
+}
+
+/*! 유틸 > 1:1 문의 > 리스트 */
+.qnaListSec{margin-top:50px;
+  .btnSec{margin-top:50px;text-align:center;
+    a{width:190px;}
+  }
+}
+
+/*! 유틸 > 1:1 문의 > 상세 */
+.qnaViewSec{margin-top:50px;
+  .btnSec{margin-top:50px;text-align:center;
+    a{width:190px;}
+  }
+}
+/*! 유틸 > 1:1 문의 > 쓰기 */
+.qnaCreateSec{margin-top:50px;
+  .createArticle{margin-top:50px;
+    >h3{padding-bottom:22px;font-size:16px;line-height:14px;color:#333;letter-spacing:-1px;
+      >*{vertical-align:top;}
+    }
+  }
+  .createArticle:first-child{margin-top:0;}
+  .form-txt{color:$COLOR-GRAY;}
+  .form-radio + .form-radio{margin-left:20px;}
+  .btnSec{margin-top:50px;text-align:center;
+    a{width:190px;}
+  }
+}
+
+/*! 유틸 > FAQ > 상단코멘트 */
+.faqDescSec{margin-top:50px;width:100%;padding-top:85px;background:url('../images/common/bg/bgFaqDesc.gif') no-repeat 50% 0;text-align:center;
+  .desc{font-size:14px;line-height:20px;}
+  .btnSec{margin-top:30px;}
+}
+
+//
+/*! 유틸 > FAQ > 카테고리선택 */
+.faqSelectRadioSec{margin-top:50px;width:100%;height:45px;background:url('../images/common/bg/bgFaq.gif') repeat-x;text-align:center;
+  label{display:inline-block;padding:0 15px;line-height:45px;color:$FONT-WHITE;font-size:12px;font-weight:bold;
+    *{line-height:45px;}
+  }
+}
+
+/*! 유틸 > FAQ > 리스트 */
+.faqListSec{width:100%;overflow:hidden;
+  dl{width:100%;
+    dt,dd{position:relative;box-sizing:border-box;width:100%;overflow:hidden;border-bottom:1px solid #ececec;}
+    dt{
+      a{display:block;box-sizing:border-box;padding-left:63px;width:100%;height:52px;line-height:52px;
+        span{display:inline-block;width:820px;overflow: hidden; text-overflow: ellipsis; white-space: nowrap; zoom:1;}
+        .ico-radio-Q{position:absolute;top:15px;left:20px;}
+        .ico-radioBox{position:absolute;top:15px;right:20px;}
+      }
+      .ico-radio-plus{display:inline-block;}
+      .ico-radio-minus{display:none;}
+      &.open{
+        .ico-radio-plus{display:none;}
+        .ico-radio-minus{display:inline-block;}
+      }
+    }
+    dd{display:none;padding:25px 20px 25px 82px;background:#fdfdfd;
+      &.open{display:block;}
+      .ico-radio-A{position:absolute;top:25px;left:20px;}
+      .desc{font-size:12px;color:$FONT-GRAY;line-height:18px;}
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

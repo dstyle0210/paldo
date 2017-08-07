@@ -8,5 +8,6 @@
 .cpnt-layer .title .close{position:absolute;top:0;right:0;width:40px;height:40px;background:#222 url(../images/common/ico/icoLayerClose.png) no-repeat}
 .cpnt-layer .cont{box-sizing:border-box;padding:30px 25px;width:100%;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;background:#fff}
 .cpnt-layer .ulistSec{margin-top:20px}
+.cpnt-layer .ulistSec .ulist-lightGray{padding-left:15px}
 .cpnt-layer .ulistSec li{font-size:11px}
 .cpnt-layer .btnSec{margin-top:30px}
