@@ -4,3 +4,7 @@
 /*! 비주얼 영역 설정 */
 .visual{position:relative;min-width:940px;width:100%;height:200px;overflow:hidden}
 .visual>img{position:absolute;top:0;left:50%;margin-left:-1000px}
+
+
+/*! 메인용 비주얼 영역 설정 */
+.visual.type-main{margin-top:-47px;height:470px}

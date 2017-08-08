@@ -3,7 +3,7 @@
 @import "../_lib/mixin.scss";
 
 /*! 게시판 > 리스트 공통(prefix : board-list) */
-[class^=board-list]{width:100%;border-top:1px solid $WALL-BG-COLOR;
+[class^=board-list]{width:100%;
   table{width:100%;table-layout:fixed;}
   th,td{box-sizing:border-box;}
   thead th{padding:15px 0;font-size:14px;line-height:14px;color:$FONT-DARKGRAY;text-align:center;border-bottom:2px solid $WALL-BG-COLOR;}
@@ -33,7 +33,7 @@
 }
 
 /*! 게시판 > 리스트 기본형(prefix : board-list) */
-.board-list{
+.board-list{border-top:1px solid $WALL-BG-COLOR;
   tbody{
     td{font-size:12px;}
     td.title{

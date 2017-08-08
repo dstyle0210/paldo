@@ -18,6 +18,9 @@
 <body>
 <div class="boilerplate">
     <div>
+        <i class="ico-morePlusGray"></i>
+    </div>
+    <div>
         <i class="ico-boardBoxPrev"></i>
         <i class="ico-boardBoxNext"></i>
     </div>

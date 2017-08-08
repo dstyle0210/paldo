@@ -2,7 +2,7 @@
 
 
 /*! 게시판 > 리스트 공통(prefix : board-list) */
-[class^=board-list]{width:100%;border-top:1px solid #111}
+[class^=board-list]{width:100%}
 [class^=board-list] table{width:100%;table-layout:fixed}
 [class^=board-list] td,[class^=board-list] th{box-sizing:border-box}
 [class^=board-list] thead th{padding:15px 0;border-bottom:2px solid #111;text-align:center;font-size:14px;color:#252525;line-height:14px}
@@ -16,6 +16,7 @@
 
 
 /*! 게시판 > 리스트 기본형(prefix : board-list) */
+.board-list{border-top:1px solid #111}
 .board-list tbody td{font-size:12px}
 .board-list tbody td.title a{display:inline-block;max-width:97%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1}
 .board-list span.condText *,.board-list tbody td.title *{vertical-align:middle}

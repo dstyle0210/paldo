@@ -63,7 +63,7 @@
         <div class="dropdown" id="GNB-LNB">
             <div class="inner">
                 <div class="lnb0" id="gnbLnb0">
-                    <a href="#"><span>채용안내</span></a>
+                    <a href="../recruit/info.jsp"><span>채용안내</span></a>
                     <a href="../recruit/noticeList.jsp"><span>채용공고</span></a>
                 </div>
                 <div class="lnb1" id="gnbLnb1">

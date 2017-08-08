@@ -145,6 +145,36 @@
 </div>
 
 
+<div style="width:940px;margin:40px auto 0;">
+    <div class="board-list-notice">
+        <div class="head">
+            <h2>채용공고</h2>
+            <a href="#" class="more"><i class="ico-morePlus"></i></a>
+        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>제목</th>
+                <th>작성일</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="#">제목영역입니다.</a></td>
+                <td>17.07.01 ~ 17.08.01</td>
+            </tr>
+            <tr>
+                <td><a href="#">제목영역입니다.</a></td>
+                <td>17.07.01 ~ 17.08.01</td>
+            </tr>
+            <tr>
+                <td><a href="#">제목영역입니다.</a></td>
+                <td>17.07.01 ~ 17.08.01</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 </body>
 </html>

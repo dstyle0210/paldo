@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+/*! 게시판 > 박스리스트 > 공통 */
+$boxList-border:1px solid #dedede;
+[class^=board-boxList]{width:100%;box-sizing:border-box;background:#fff;border:$boxList-border;}
+
+/*! 게시판 > 박스리스트 > 공지사항형(prefix : board-boxList) */
+.board-boxList-notice{
+  // 헤더영역
+  .head{position:relative;padding:15px;width:100%;height:49px;box-sizing:border-box;border-bottom:$boxList-border;
+    h2{@include text-oneline(16px);}
+    .more{position:absolute;top:18px;right:20px;}
+  }
+  //
+  .list{width:100%;box-sizing:border-box;padding:0 20px;
+    table{width:100%;table-layout:fixed;}
+    tr:first-child td{border-top:0;}
+    td{height:54px;border-top:1px solid #f1f1f1;}
+    td.title{
+      a{font-size:13px;color:$FONT-DARKGRAY;@include text-overflow(100%);}
+    }
+    td.date{font-size:12px;text-align:right;color:$FONT-GRAY;letter-spacing:-1px;}
+  }
+}

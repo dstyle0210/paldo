@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+/*! 게시판 > 박스리스트 > 공통 */
+[class^=board-boxList]{box-sizing:border-box;width:100%;border:1px solid #dedede;background:#fff}
+
+
+/*! 게시판 > 박스리스트 > 공지사항형(prefix : board-boxList) */
+.board-boxList-notice .head{position:relative;box-sizing:border-box;padding:15px;width:100%;height:49px;border-bottom:1px solid #dedede}
+.board-boxList-notice .head h2{display:inline-block;max-width:100%;overflow:hidden;white-space:nowrap;font-size:16px;line-height:16px}
+.board-boxList-notice .head .more{position:absolute;top:18px;right:20px}
+.board-boxList-notice .list{box-sizing:border-box;padding:0 20px;width:100%}
+.board-boxList-notice .list table{width:100%;table-layout:fixed}
+.board-boxList-notice .list tr:first-child td{border-top:0}
+.board-boxList-notice .list td{height:54px;border-top:1px solid #f1f1f1}
+.board-boxList-notice .list td.title a{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;color:#252525;zoom:1}
+.board-boxList-notice .list td.date{text-align:right;letter-spacing:-1px;font-size:12px;color:#666}

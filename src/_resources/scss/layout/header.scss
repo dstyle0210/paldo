@@ -3,7 +3,7 @@
 @import "../_lib/mixin.scss";
 
 $logoGnbHei:90px; // 로고,GNB영역 높이
-$breadCrumbHei:47px; // 현재위치,드롭다운 높이
+$breadCrumbHei:$BREADCRUMB-HEIGHT; // 현재위치,드롭다운 높이
 /*! 헤더 */
 .header{position:relative;width:100%;height:($logoGnbHei+$breadCrumbHei);overflow:hidden;background:$BG-WHITE;border-bottom:1px solid #898989;
   a{text-decoration:none;}

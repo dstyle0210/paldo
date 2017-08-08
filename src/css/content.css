@@ -45,6 +45,12 @@
 /*! 입사지원 > 합격자 조회 > 합격결과 */
 .applicationWrap .passResultSec{box-sizing:border-box;margin-top:50px;padding:70px 50px;width:100%;border:1px solid #ececec}
 
+/*! 회사소개 공통 */
+.companyWrap .companyH2{padding-bottom:30px;border-bottom:1px solid #ececec;text-align:center;font-size:30px;color:#252525;line-height:30px}
+
+/*! 메인 > 채용공고 */
+
+
 /*! 컨덴츠 > 페이지공통 */
 .pageWrap{margin:0 auto;padding-top:30px;padding-bottom:50px;width:940px}
 

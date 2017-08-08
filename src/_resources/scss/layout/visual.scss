@@ -6,3 +6,5 @@
 .visual{position:relative;width:100%;min-width:$WRAP-WIDTH;height:200px;overflow:hidden;
   >img{position:absolute;top:0;left:50%;margin-left:-1000px;}
 }
+/*! 메인용 비주얼 영역 설정 */
+.visual.type-main{margin-top:$BREADCRUMB-HEIGHT * -1;height:470px;}
