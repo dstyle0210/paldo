@@ -8,32 +8,23 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/component.css">
+    <link rel="stylesheet" href="../css/content.css">
 
     <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/lib/jquery.colorbox.js"></script>
+
     <script src="../js/main.js"></script>
+    <script src="../js/content.js"></script>
 </head>
 <body>
 
-
-
-
-<!-- 레이어 -->
-<div class="cpnt-layer">
-    <div class="title">
-        <h3>타이틀</h3>
-        <a href="#" class="close"><span class="tts">닫기</span></a>
-    </div>
-    <div class="cont">
-        좌우상하 패딩이 존재하는 컨덴츠영역.
-    </div>
-    <div class="tail">
-        꼬리 또는 맨하단 영역 또는 패딩이 존재하지 않는 영역.
-    </div>
-</div>
-<!-- // 레이어 -->
-
-
-
+<script type="text/javascript">
+$(function(){
+    $.colorbox({href:"../layer/browserUpdate.html",opacity: 0.5,closeButton:false});
+})
+</script>
 
 </body>
 </html>
+
+

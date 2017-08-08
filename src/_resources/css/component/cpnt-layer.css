@@ -10,4 +10,5 @@
 .cpnt-layer .ulistSec{margin-top:20px}
 .cpnt-layer .ulistSec .ulist-lightGray{padding-left:15px}
 .cpnt-layer .ulistSec li{font-size:11px}
+.cpnt-layer .tail{box-sizing:border-box;width:100%;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;background:#fff}
 .cpnt-layer .btnSec{margin-top:30px}

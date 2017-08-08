@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../_lib/val.scss";
+@import "../_lib/mixin.scss";
+
+/*! (레이어) 브라우저 업데이트 */
+.browserUpdateSec{text-align:center;
+  h4{padding-top:20px;padding-bottom:25px;font-size:18px;color:$FONT-DARKGRAY;}
+  .desc{font-size:13px;line-height:18px;color:$FONT-GRAY;
+    b{text-decoration:underline;color:$FONT-BRAND;}
+  }
+  .btnSec a{padding:0 5px;}
+}
+.browserUpdateExpiresSec{padding:10px 0 6px;text-align:center;color:$FONT-GRAY;
+}

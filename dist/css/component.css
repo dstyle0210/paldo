@@ -162,6 +162,7 @@ a.btn-add i{position:absolute;top:4px;right:4px}
 .cpnt-layer .ulistSec{margin-top:20px}
 .cpnt-layer .ulistSec .ulist-lightGray{padding-left:15px}
 .cpnt-layer .ulistSec li{font-size:11px}
+.cpnt-layer .tail{box-sizing:border-box;width:100%;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;background:#fff}
 .cpnt-layer .btnSec{margin-top:30px}
 
 /*! 입력요소 공통적용(prefix : form-) */
@@ -246,7 +247,6 @@ span[class^=form-] .btn-inform{position:absolute;top:0;right:0}
 [class^=ico-boardBox]{width:16px;height:16px;border:1px solid #ececec;background-image:url(../images/common/ico/icoBoardPrevNext.gif);background-repeat:no-repeat}
 .ico-boardBoxPrev{background-position:5px 1px}
 .ico-boardBoxNext{background-position:-20px 1px}
-.ico-morePlusGray{width:16px;height:16px;background:url(../images/common/ico/icoMorePlusGray.gif) no-repeat}
 
 /*! 아이콘들 : 라디오(prefix : ico-) */
 .ico-radio-circleCheckRed,.ico-radio-lock{width:22px;height:22px;background-image:url(../images/common/bg/bgAgreeRadio.png);background-position:-29px 0;background-repeat:no-repeat}

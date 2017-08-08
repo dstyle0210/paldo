@@ -45,6 +45,14 @@
 /*! 입사지원 > 합격자 조회 > 합격결과 */
 .applicationWrap .passResultSec{box-sizing:border-box;margin-top:50px;padding:70px 50px;width:100%;border:1px solid #ececec}
 
+/*! (레이어) 브라우저 업데이트 */
+.browserUpdateSec{text-align:center}
+.browserUpdateSec h4{padding-top:20px;padding-bottom:25px;font-size:18px;color:#252525}
+.browserUpdateSec .desc{font-size:13px;color:#666;line-height:18px}
+.browserUpdateSec .desc b{text-decoration:underline;color:#e03627}
+.browserUpdateSec .btnSec a{padding:0 5px}
+.browserUpdateExpiresSec{padding:10px 0 6px;text-align:center;color:#666}
+
 /*! 회사소개 공통 */
 .companyWrap .companyH2{padding-bottom:30px;border-bottom:1px solid #ececec;text-align:center;font-size:30px;color:#252525;line-height:30px}
 

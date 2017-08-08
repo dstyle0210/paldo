@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+
+/*! (레이어) 브라우저 업데이트 */
+.browserUpdateSec{text-align:center}
+.browserUpdateSec h4{padding-top:20px;padding-bottom:25px;font-size:18px;color:#252525}
+.browserUpdateSec .desc{font-size:13px;color:#666;line-height:18px}
+.browserUpdateSec .desc b{text-decoration:underline;color:#e03627}
+.browserUpdateSec .btnSec a{padding:0 5px}
+.browserUpdateExpiresSec{padding:10px 0 6px;text-align:center;color:#666}
