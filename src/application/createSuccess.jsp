@@ -49,7 +49,7 @@ String cDep3 = "입사지원서 제출"; // 3depth명 (없을경우 공백으로
         <p>팔도 채용에 지원해 주신것에 대해 진심으로 감사드립니다.</p>
         <p>입사지원서가 성공적으로 등록되었습니다.</p>
         <div class="btnSec">
-            <a href="../application/createSuccess.jsp" class="btn-lg btn-submit"><span>지원서 조회하기</span></a>
+            <a href="../application/read.jsp" class="btn-lg btn-submit"><span>지원서 조회하기</span></a>
         </div>
     </div>
 

@@ -23,12 +23,12 @@
     <div class="header" id="header">
         <!-- 로고와 글로벌메뉴 -->
         <div class="logoGnb">
-            <div class="logo"><a href="#"><img src="../images/temp/@logo.gif" alt="로고샘플"></a></div>
+            <div class="logo"><a href="../main/index.jsp"><img src="../images/temp/@logo.png" alt="로고샘플"></a></div>
             <div class="gnb">
                 <ul>
-                    <li><a href="#" data-href="#gnbLnb0"><span>채용정보</span><i></i></a></li>
+                    <li><a href="../recruit/info.jsp" data-href="#gnbLnb0"><span>채용정보</span><i></i></a></li>
                     <li><a href="../application/createStep0Agree.jsp" data-href="#gnbLnb1"><span>입사지원</span><i></i></a></li>
-                    <li><a href="#" data-href="#gnbLnb2"><span>회사소개</span><i></i></a></li>
+                    <li><a href="../company/culture.jsp" data-href="#gnbLnb2"><span>회사소개</span><i></i></a></li>
                 </ul>
             </div>
         </div>
@@ -48,7 +48,7 @@
         <div class="location">
             <div class="inner">
                 <div class="breadCrumb">
-                    <a href="#" class="home"><span>HOME</span></a>
+                    <a href="../main/index.jsp" class="home"><span>HOME</span></a>
                     <%if(cDep1!=""){%><a href="#"><span><%=cDep1 %></span></a><%}%>
                     <%if(cDep2!=""){%><a href="#"><span><%=cDep2 %></span></a><%}%>
                 </div>

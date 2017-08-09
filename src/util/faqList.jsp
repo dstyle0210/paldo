@@ -16,7 +16,7 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
             친절하게 답변해 드립니다.
         </div>
         <div class="btnSec">
-            <a href="#" class="btn-sm btn-submit"><span>1:1 문의하기</span></a>
+            <a href="../util/qnaList.jsp" class="btn-sm btn-submit"><span>1:1 문의하기</span></a>
         </div>
     </div>
 

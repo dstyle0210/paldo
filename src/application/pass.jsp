@@ -120,7 +120,7 @@ String cDep3 = "계정조회"; // 3depth명 (없을경우 공백으로 처리 EX
 
         <div class="btnSec">
             <div class="btn-sec-center">
-                <a href="../application/createStep2.jsp" class="btn-lg btn-submit"><span>조회</span></a>
+                <a href="../application/passResult.jsp" class="btn-lg btn-submit"><span>조회</span></a>
             </div>
         </div>
 

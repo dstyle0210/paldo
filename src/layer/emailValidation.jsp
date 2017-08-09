@@ -58,8 +58,8 @@
 
         <div class="btnSec">
             <div class="btn-sec-center">
-                <a href="#" class="btn-sm btn-submit"><span>확인</span></a>
-                <a href="#" class="btn-sm btn-cancel"><span>취소</span></a>
+                <a href="#" class="btn-sm btn-submit" onclick="$.colorbox.close();return false;"><span>확인</span></a>
+                <a href="#" class="btn-sm btn-cancel" onclick="$.colorbox.close();return false;"><span>취소</span></a>
             </div>
         </div>
 

@@ -71,9 +71,9 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
 
 
         <div class="btnSec">
-            <a href="#" class="btn-lg btn-cancel"><span>목록</span></a>
-            <a href="#" class="btn-lg btn-submit"><span>지원서 작성</span></a>
-            <a href="#" class="btn-lg btn-edit"><span>지원서 수정</span></a>
+            <a href="../recruit/noticeList.jsp" class="btn-lg btn-cancel"><span>목록</span></a>
+            <a href="../application/createStep0Agree.jsp" class="btn-lg btn-submit"><span>지원서 작성</span></a>
+            <a href="../application/update.jsp" class="btn-lg btn-edit"><span>지원서 수정</span></a>
         </div>
 
 

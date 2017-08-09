@@ -115,8 +115,8 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
         <!-- // 상담내용 -->
 
         <div class="btnSec">
-            <a href="#" class="btn-lg btn-submit"><span>등록</span></a>
-            <a href="#" class="btn-lg btn-cancel"><span>취소</span></a>
+            <a href="../util/qnaList.jsp" class="btn-lg btn-submit"><span>등록</span></a>
+            <a href="../util/qnaList.jsp" class="btn-lg btn-cancel"><span>취소</span></a>
         </div>
 
 

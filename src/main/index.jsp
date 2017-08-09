@@ -26,12 +26,12 @@
     <div class="header" id="header">
         <!-- 로고와 글로벌메뉴 -->
         <div class="logoGnb">
-            <div class="logo"><a href="#"><img src="../images/temp/@logo.gif" alt="로고샘플"></a></div>
+            <div class="logo"><a href="../main/index.jsp"><img src="../images/temp/@logo.png" alt="로고샘플"></a></div>
             <div class="gnb">
                 <ul>
-                    <li><a href="#" data-href="#gnbLnb0"><span>채용정보</span><i></i></a></li>
+                    <li><a href="../recruit/noticeList.jsp" data-href="#gnbLnb0"><span>채용정보</span><i></i></a></li>
                     <li><a href="../application/createStep0Agree.jsp" data-href="#gnbLnb1"><span>입사지원</span><i></i></a></li>
-                    <li><a href="#" data-href="#gnbLnb2"><span>회사소개</span><i></i></a></li>
+                    <li><a href="../company/culture.jsp" data-href="#gnbLnb2"><span>회사소개</span><i></i></a></li>
                 </ul>
             </div>
         </div>
@@ -51,7 +51,7 @@
         <div class="dropdown" id="GNB-LNB">
             <div class="inner">
                 <div class="lnb0" id="gnbLnb0">
-                    <a href="#"><span>채용안내</span></a>
+                    <a href="../recruit/info.jsp"><span>채용안내</span></a>
                     <a href="../recruit/noticeList.jsp"><span>채용공고</span></a>
                 </div>
                 <div class="lnb1" id="gnbLnb1">
@@ -61,10 +61,10 @@
                     <a href="../application/read.jsp"><span>지원서 조회</span></a>
                 </div>
                 <div class="lnb2" id="gnbLnb2">
-                    <a href="#"><span>기업사명</span></a>
-                    <a href="#"><span>기업문화</span></a>
-                    <a href="#"><span>인사제도</span></a>
-                    <a href="#"><span>오시는길</span></a>
+                    <!--<a href="../company/mission.jsp"><span>기업사명</span></a>-->
+                    <a href="../company/culture.jsp"><span>기업문화</span></a>
+                    <a href="../company/system.jsp"><span>인사제도</span></a>
+                    <!--<a href="../company/location.jsp"><span>오시는길</span></a>-->
                 </div>
             </div>
         </div>
@@ -108,15 +108,15 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="title"><a href="#">제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.</a></td>
+                                <td class="title"><a href="../recruit/noticeList.jsp">제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.</a></td>
                                 <td class="date">17.07.01 ~ 17.08.01</td>
                             </tr>
                             <tr>
-                                <td class="title"><a href="#">제목영역입니다.</a></td>
+                                <td class="title"><a href="../recruit/noticeList.jsp">제목영역입니다.</a></td>
                                 <td class="date">17.07.01 ~ 17.08.01</td>
                             </tr>
                             <tr>
-                                <td class="title"><a href="#">제목영역입니다.</a></td>
+                                <td class="title"><a href="../recruit/noticeList.jsp">제목영역입니다.</a></td>
                                 <td class="date">17.07.01 ~ 17.08.01</td>
                             </tr>
                             </tbody>
@@ -127,8 +127,8 @@
             <!-- // 채용공고 -->
 
             <!-- 메인 빠른링크 베너 -->
-            <div class="mainBnr"><a href="#"><img src="../images/temp/@mainBnr.jpg" alt=""></a></div>
-            <div class="mainBnr"><a href="#"><img src="../images/temp/@mainBnr2.jpg" alt=""></a></div>
+            <div class="mainBnr"><a href="../application/createStep0Agree.jsp"><img src="../images/temp/@mainBnr.jpg" alt=""></a></div>
+            <div class="mainBnr"><a href="../application/pass.jsp"><img src="../images/temp/@mainBnr2.jpg" alt=""></a></div>
             <!-- // 메인 빠른링크 베너 -->
 
 

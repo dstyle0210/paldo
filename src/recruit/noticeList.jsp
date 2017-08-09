@@ -55,7 +55,7 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
                 <tr>
                     <td class="type">신입</td>
                     <td class="title">
-                        <a href="#">
+                        <a href="../recruit/noticeView.jsp">
                             <strong><b class="text-green">[예정]</b> 2017 하반기 신입 사원 채용2017 하반기 신입 사원 채용2017 하반기 신입 사원 채용2017 하반기 신입 사원 채용2017 하반기 신입 사원 채용2017 하반기 신입 사원 채용2017 하반기 신입 사원 채용 <i class="ico-txtNewRed"></i></strong>
                             <p>정규직 l 해외영업 및 연구원</p>
                         </a>
@@ -68,7 +68,7 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
                 <tr>
                     <td class="type">신입/경력</td>
                     <td class="title">
-                        <a href="#">
+                        <a href="../recruit/noticeView.jsp">
                             <strong><b class="text-point">[접수중]</b> 2017 하반기 신입 사원 채용</strong>
                             <p>정규직 l 해외영업 및 연구원</p>
                         </a>
@@ -81,7 +81,7 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
                 <tr class="closed">
                     <td class="type">신입/경력</td>
                     <td class="title">
-                        <a href="#">
+                        <a href="../recruit/noticeView.jsp">
                             <strong>[마감] 2017 하반기 신입 사원 채용</strong>
                             <p>정규직 l 해외영업 및 연구원</p>
                         </a>
@@ -129,8 +129,8 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
             </ul>
         </div>
         <div class="btnSec">
-            <a href="#" class="btn-sm btn-submit"><span>채용 FAQ</span></a>
-            <a href="#" class="btn-sm btn-cancel"><span>1:1문의</span></a>
+            <a href="../util/faqList.jsp" class="btn-sm btn-submit"><span>채용 FAQ</span></a>
+            <a href="../util/qnaList.jsp" class="btn-sm btn-cancel"><span>1:1문의</span></a>
         </div>
     </div>
     <!-- // 지원서 작성요령 -->

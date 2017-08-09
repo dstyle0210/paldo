@@ -54,14 +54,14 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
                 <tr>
                     <td class="index">10</td>
                     <td class="cond"><span class="condText replyIn"><i class="ico-txtCheckRed"></i> 답변완료</span></td>
-                    <td class="title"><a href="#">팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?</a> <i class="ico-radio-lock on"></i></td>
+                    <td class="title"><a href="../util/qnaView.jsp">팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?팔도 공채는 언제 뽑나요?</a> <i class="ico-radio-lock on"></i></td>
                     <td class="writer">홍길동</td>
                     <td class="date">2017-06-25</td>
                 </tr>
                 <tr>
                     <td class="index">9</td>
                     <td class="cond"><span class="condText">답변대기</span></td>
-                    <td class="title"><a href="#">팔도 공채는 언제 뽑나요?</a>  </td>
+                    <td class="title"><a href="../util/qnaView.jsp">팔도 공채는 언제 뽑나요?</a>  </td>
                     <td class="writer">홍길동</td>
                     <td class="date">2017-06-25</td>
                 </tr>
@@ -91,7 +91,7 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
 
 
         <div class="btnSec">
-            <a href="#" class="btn-lg btn-submit"><span>1:1문의 등록</span></a>
+            <a href="../util/qnaCreate.jsp" class="btn-lg btn-submit"><span>1:1문의 등록</span></a>
         </div>
 
 
