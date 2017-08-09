@@ -80,36 +80,60 @@
     <%-- 컨덴츠 --%>
     <div class="content">
 
-        <!-- 채용공고 -->
-        <div class="recruitNotice">
-            <div class="head">
-                <h2>채용공고</h2>
-                <a href="#" class="more"><i class="ico-morePlus"></i></a>
+
+        <!-- 메인 컨덴츠 -->
+        <script>
+            $(function(){
+                $("html").addClass("flag-main"); // 메인페이지 일경우, <html> 요소에 flag-main 이라는 클래스가 삽입됨.
+            })
+        </script>
+        <div class="mainWrap">
+
+            <!-- 채용공고 -->
+            <div class="recruitNotice">
+                <div class="board-boxList-notice">
+                    <div class="head">
+                        <h2>채용공고</h2>
+                        <a href="#" class="more" title="더보기"><i class="ico-morePlusGray"></i></a>
+                    </div>
+                    <div class="list">
+                        <table>
+                            <col style="width:auto;" />
+                            <col style="width:120px;" />
+                            <thead class="tts">
+                            <tr>
+                                <th>제목</th>
+                                <th>작성일</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="title"><a href="#">제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.제목영역입니다.</a></td>
+                                <td class="date">17.07.01 ~ 17.08.01</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#">제목영역입니다.</a></td>
+                                <td class="date">17.07.01 ~ 17.08.01</td>
+                            </tr>
+                            <tr>
+                                <td class="title"><a href="#">제목영역입니다.</a></td>
+                                <td class="date">17.07.01 ~ 17.08.01</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <table>
-                <thead>
-                <tr>
-                    <th>제목</th>
-                    <th>작성일</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td><a href="#">제목영역입니다.</a></td>
-                    <td>17.07.01 ~ 17.08.01</td>
-                </tr>
-                <tr>
-                    <td><a href="#">제목영역입니다.</a></td>
-                    <td>17.07.01 ~ 17.08.01</td>
-                </tr>
-                <tr>
-                    <td><a href="#">제목영역입니다.</a></td>
-                    <td>17.07.01 ~ 17.08.01</td>
-                </tr>
-                </tbody>
-            </table>
+            <!-- // 채용공고 -->
+
+            <!-- 메인 빠른링크 베너 -->
+            <div class="mainBnr"><a href="#"><img src="../images/temp/@mainBnr.jpg" alt=""></a></div>
+            <div class="mainBnr"><a href="#"><img src="../images/temp/@mainBnr2.jpg" alt=""></a></div>
+            <!-- // 메인 빠른링크 베너 -->
+
+
         </div>
-        <!-- // 채용공고 -->
+        <!-- // 메인 컨덴츠 -->
 
     </div>
     <%-- 컨덴츠 --%>

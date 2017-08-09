@@ -55,3 +55,7 @@
 .faqListSec dl dd.open{display:block}
 .faqListSec dl dd .ico-radio-A{position:absolute;top:25px;left:20px}
 .faqListSec dl dd .desc{font-size:12px;color:#666;line-height:18px}
+
+
+/*! 개인정보처리방침 */
+.agreeSec{margin-top:50px}

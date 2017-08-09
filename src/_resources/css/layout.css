@@ -33,8 +33,9 @@ body,html{width:100%;height:100%}
 .familysite-select select{padding:0 10px;min-height:20px;width:100%;height:20px;font-size:12px;line-height:20px;opacity:0;filter:alpha(opacity=0)}
 
 /*! 헤더 */
-.header{position:relative;width:100%;height:137px;overflow:hidden;border-bottom:1px solid #898989;background:#fff}
+.header{position:relative;z-index:2;width:100%;height:137px;border-bottom:1px solid #898989;background:#fff}
 .header a{text-decoration:none}
+.flag-main .header{height:90px}
 
 /*! 헤더 > 로고,GNB */
 .header .logoGnb{margin:0 auto;width:940px;height:90px;overflow:hidden}
@@ -74,7 +75,7 @@ body,html{width:100%;height:100%}
 .visual>img{position:absolute;top:0;left:50%;margin-left:-1000px}
 
 /*! 메인용 비주얼 영역 설정 */
-.visual.type-main{margin-top:-47px;height:470px}
+.flag-main .visual{margin-top:-47px;height:470px}
 
 /*! 전체 와퍼영역 설정 */
 .wrapper{width:100%;height:100%;background:#252525}

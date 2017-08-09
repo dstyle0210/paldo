@@ -1,4 +1,14 @@
 @charset "UTF-8";
 
 
+/*! 메인 > 와퍼 */
+.flag-main .content{background:#f4f4f4}
+.mainWrap{margin:0 auto;padding:50px 0 60px;width:940px;overflow:hidden}
+
+
 /*! 메인 > 채용공고 */
+.mainWrap .recruitNotice{float:left;width:470px}
+
+
+/*! 메인 > 메인 빠른링크 베너 */
+.mainWrap .mainBnr{float:left;margin-left:20px}

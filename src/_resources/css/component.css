@@ -247,6 +247,7 @@ span[class^=form-] .btn-inform{position:absolute;top:0;right:0}
 [class^=ico-boardBox]{width:16px;height:16px;border:1px solid #ececec;background-image:url(../images/common/ico/icoBoardPrevNext.gif);background-repeat:no-repeat}
 .ico-boardBoxPrev{background-position:5px 1px}
 .ico-boardBoxNext{background-position:-20px 1px}
+.ico-morePlusGray{width:16px;height:16px;background:url(../images/common/ico/icoMorePlusGray.gif) no-repeat}
 
 /*! 아이콘들 : 라디오(prefix : ico-) */
 .ico-radio-circleCheckRed,.ico-radio-lock{width:22px;height:22px;background-image:url(../images/common/bg/bgAgreeRadio.png);background-position:-29px 0;background-repeat:no-repeat}
@@ -268,6 +269,7 @@ span[class^=form-] .btn-inform{position:absolute;top:0;right:0}
 /*! 텍스트 공통(prefix : text-) */
 .text-point{color:#e03627!important}
 .text-green{color:#6eb92c!important}
+.text-darkgray{color:#252525!important}
 
 /*! 웹폰트 클래스 */
 .dotum{font-family:"dotum"}

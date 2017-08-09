@@ -9,7 +9,8 @@ String cDep3 = ""; // 3depth명 (없을경우 공백으로 처리 EX: "" )
 <div class="pageWrap recruitWrap" id="recruitInfo">
     <h2 class="recruitH2">채용안내</h2>
 
-    채용안내 영역
+
+    <img src="../images/temp/@recruitInfo.jpg" alt="">
 
 </div>
 

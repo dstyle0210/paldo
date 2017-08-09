@@ -73,10 +73,10 @@
                     <a href="../application/read.jsp"><span>지원서 조회</span></a>
                 </div>
                 <div class="lnb2" id="gnbLnb2">
-                    <a href="#"><span>기업사명</span></a>
-                    <a href="#"><span>기업문화</span></a>
-                    <a href="#"><span>인사제도</span></a>
-                    <a href="#"><span>오시는길</span></a>
+                    <!--<a href="../company/mission.jsp"><span>기업사명</span></a>-->
+                    <a href="../company/culture.jsp"><span>기업문화</span></a>
+                    <a href="../company/system.jsp"><span>인사제도</span></a>
+                    <!--<a href="../company/location.jsp"><span>오시는길</span></a>-->
                 </div>
             </div>
         </div>

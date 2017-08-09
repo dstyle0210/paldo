@@ -2,7 +2,13 @@
 @import "../_lib/val.scss";
 @import "../_lib/mixin.scss";
 
-/*! 메인 > 채용공고 */
-.recruitNotice{
 
-}
+/*! 메인 > 와퍼 */
+.flag-main .content{background:#f4f4f4;}
+.mainWrap{padding:50px 0 60px;margin:0 auto;width:$WRAP-WIDTH;overflow:hidden;}
+
+/*! 메인 > 채용공고 */
+.mainWrap .recruitNotice{float:left;width:470px;}
+
+/*! 메인 > 메인 빠른링크 베너 */
+.mainWrap .mainBnr{float:left;margin-left:20px;}
